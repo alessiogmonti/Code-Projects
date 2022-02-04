@@ -1,0 +1,486 @@
+@font-face {
+  font-family: 'wsj-iconography';
+  src:  url('fonts/wsj-iconography.eot?5l2ymq');
+  src:  url('fonts/wsj-iconography.eot?5l2ymq#iefix') format('embedded-opentype'),
+    url('fonts/wsj-iconography.ttf?5l2ymq') format('truetype'),
+    url('fonts/wsj-iconography.woff?5l2ymq') format('woff'),
+    url('fonts/wsj-iconography.svg?5l2ymq#wsj-iconography') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wsj-iconography' !important;
+  speak: none;
+  font-size:15px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-alarm:before {
+  content: "\e91f";
+}
+.icon-barchart:before {
+  content: "\e920";
+}
+.icon-diamond:before {
+  content: "\e921";
+}
+.icon-dot:before {
+  content: "\e922";
+}
+.icon-email:before {
+  content: "\e923";
+}
+.icon-evernote:before {
+  content: "\e924";
+}
+.icon-exclamation:before {
+  content: "\e925";
+}
+.icon-eyeball:before {
+  content: "\e926";
+}
+.icon-facebook:before {
+  content: "\e927";
+}
+.icon-googleplus:before {
+  content: "\e928";
+}
+.icon-info:before {
+  content: "\e929";
+}
+.icon-instagram:before {
+  content: "\e92a";
+}
+.icon-linkedin:before {
+  content: "\e92b";
+}
+.icon-pinterest:before {
+  content: "\e92c";
+}
+.icon-podcast:before {
+  content: "\e92d";
+}
+.icon-reddit:before {
+  content: "\e92e";
+}
+.icon-snapchat:before {
+  content: "\e92f";
+}
+.icon-stumbleupon:before {
+  content: "\e930";
+}
+.icon-twitter:before {
+  content: "\e931";
+}
+.icon-youtube:before {
+  content: "\e932";
+}
+.icon-audio:before {
+  content: "\e900";
+}
+.icon-calendar:before {
+  content: "\e901";
+}
+.icon-cancel:before {
+  content: "\e902";
+}
+.icon-chart:before {
+  content: "\e903";
+}
+.icon-chat:before {
+  content: "\e904";
+}
+.icon-check-circle:before {
+  content: "\e905";
+}
+.icon-check:before {
+  content: "\e906";
+}
+.icon-click:before {
+  content: "\e907";
+}
+.icon-doc:before {
+  content: "\e908";
+}
+.icon-down:before {
+  content: "\e909";
+}
+.icon-download:before {
+  content: "\e90a";
+}
+.icon-ellipsis:before {
+  content: "\e90b";
+}
+.icon-circle-exclamation:before {
+  content: "\e90c";
+}
+.icon-expand:before {
+  content: "\e90d";
+}
+.icon-figure:before {
+  content: "\e90e";
+}
+.icon-forward:before {
+  content: "\e90f";
+}
+.icon-hamburger:before {
+  content: "\e910";
+}
+.icon-circle-info:before {
+  content: "\e911";
+}
+.icon-interactive:before {
+  content: "\e912";
+}
+.icon-left:before {
+  content: "\e913";
+}
+.icon-list:before {
+  content: "\e914";
+}
+.icon-pause:before {
+  content: "\e915";
+}
+.icon-photo:before {
+  content: "\e916";
+}
+.icon-play:before {
+  content: "\e917";
+}
+.icon-replay:before {
+  content: "\e918";
+}
+.icon-right:before {
+  content: "\e919";
+}
+.icon-search:before {
+  content: "\e91a";
+}
+.icon-share:before {
+  content: "\e91b";
+}
+.icon-star:before {
+  content: "\e91c";
+}
+.icon-touch:before {
+  content: "\e91d";
+}
+.icon-up:before {
+  content: "\e91e";
+}
+.icon-circle{
+  background-color: #868686;
+  border-radius: 15px;
+  height: 29px;
+  width: 29px;
+  display: inline-block;
+  vertical-align:middle;
+  color: white;
+  padding-top: 7px;
+  padding-left:1px;
+  font-size: 13px;
+}
+.icon-circle.icon-down:before{
+  padding-right: 1px;
+  font-size: 14px;
+  padding-top: 2px;
+  display: block;
+}
+.icon-circle.icon-circle-exclamation{
+  font-size: 17px;
+  padding-top: 0px;
+  padding-right: 1px;
+  display: block;
+  margin-top: -1px;
+}
+.icon-circle.icon-alarm:before{
+  padding-top: 7px;
+  font-size: 15px;
+  padding-left: 1px;
+}
+.icon-circle.icon-barchart:before{
+  padding-top: 7px;
+  font-size: 15px;
+  padding-left: 0px;
+  padding-right: 1px;
+}
+.icon-circle.icon-diamond:before{
+  padding-top: 1px;
+  font-size: 13px;
+  display: block;
+}
+.icon-circle.icon-dot:before{
+  padding-top: 7px;
+  padding-left: 0px;
+  font-size: 15px;
+}
+.icon-circle.icon-email:before{
+  font-size: 14px;
+  padding-top: 1px;
+  padding-left: 0px;
+  display: block;
+}
+.icon-circle.icon-evernote{
+  font-size: 16px;
+  padding-left: 0;
+  padding-top:7px;
+}
+.icon-circle.icon-exclamation:before{
+  font-size: 17px;
+  padding-top: 6px;
+  padding-left:1px;
+}
+.icon-circle.icon-eyeball:before{
+  font-size: 16px;
+  padding-top: 0px;
+  padding-right: 1px;
+  display: block;
+}
+.icon-circle.icon-facebook:before{
+  font-size: 15px;
+  padding-top: 0px;
+  padding-left: 0px;
+  display: block;
+}
+.icon-circle.icon-googleplus:before{
+  font-size: 16px;
+  padding-top: 7px;
+  padding-left:1px;
+}
+.icon-circle.icon-info:before{
+  font-size: 17px;
+  padding-top: 0px;
+  padding-right: 1px;
+  display: block;
+  margin-top: -1px;
+}
+.icon-circle.icon-instagram:before{
+  font-size:15px;
+  padding-top:7px;
+  padding-left:0px;
+}
+.icon-circle.icon-linkedin:before{
+  padding-left: 0px;
+  padding-top: 7px;
+  font-size: 14px;
+}
+.icon-circle.icon-pinterest:before{
+  font-size: 15px;
+  padding-top: 7px;
+  padding-left: 0px;
+}
+.icon-circle.icon-podcast:before{
+  font-size: 15px;
+  padding-top: 7px;
+  padding-left: 0px;
+}
+.icon-circle.icon-reddit:before{
+  font-size: 17px;
+  padding-top: 6px;
+  padding-left:0;
+}
+.icon-circle.icon-snapchat:before{
+  font-size: 14px;
+  padding-left: 0;
+  padding-right: 1px;
+}
+.icon-circle.icon-stumbleupon:before{
+  font-size: 16px;
+  padding-right: 1px;
+  display: block;
+  margin-top: -1px;
+}
+.icon-circle.icon-twitter:before{
+  font-size: 14px;
+  padding-top: 1px;
+  padding-left: 1px;
+  display: block;
+}
+.icon-circle.icon-youtube:before{
+  font-size: 15px;
+  padding-left: 0;
+  padding-top:7px;
+}
+.icon-circle.icon-audio:before{
+  padding-top: 1px;
+  font-size: 13px;
+  padding-left: 0px;
+  display: block;
+}
+.icon-circle.icon-calendar:before{
+  font-size: 14px;
+  padding-left: 0px;
+  padding-top: 7px;
+}
+.icon-circle.icon-cancel:before{
+  padding-top: 2px;
+  font-size: 12px;
+  padding-left: 0px;
+  display: block;
+}
+.icon-circle.icon-chart:before{
+  padding-top: 7px;
+  font-size: 13px;
+  padding-left: 0px;
+}
+.icon-circle.icon-chat:before{
+  padding-right: 1px;
+  padding-top: 2px;
+  font-size: 13px;
+  display: block;
+}
+.icon-circle.icon-check-circle:before{
+  font-size: 17px;
+  padding-top: 0px;
+  padding-right: 1px;
+  display: block;
+  margin-top: -1px;
+}
+.icon-circle.icon-check:before{
+  font-size: 14px;
+  padding-top: 1px;
+  padding-left: 0px;
+  display: block;
+}
+.icon-circle.icon-click:before{
+  font-size: 15px;
+  padding-left: 0;
+  padding-top:7px;
+}
+.icon-circle.icon-doc:before{
+  font-size: 14px;
+  padding-top: 7px;
+  padding-left: 0px;
+  padding-right: 1px;
+}
+.icon-circle.icon-down:before{
+  padding-left: 0;
+  font-size: 14px;
+  padding-top:7px;
+}
+.icon-circle.icon-download:before{
+  padding-left: 0;
+  font-size: 14px;
+  padding-top: 7px;
+  padding-right: 2px;
+}
+.icon-circle.icon-ellipsis:before{
+  padding-top: 2px;
+  padding-left: 0;
+  font-size: 13px;
+  display: block;
+}
+.icon-circle.icon-circle-exlamation:before{
+  font-size: 17px;
+  padding-top: 6px;
+  padding-left:0px;
+}
+.icon-circle.icon-expand:before{
+  padding-top: 1px;
+  padding-left: 0;
+  font-size: 13px;
+  display: block;
+}
+.icon-circle.icon-figure:before{
+  padding-left: 0;
+  font-size: 14px;
+  padding-top:7px;
+}
+.icon-circle.icon-forward:before{
+  padding-top: 7px;
+  font-size: 14px;
+  padding-left:1px;
+}
+.icon-circle.icon-hamburger:before{
+  padding-top: 1px;
+  font-size: 13px;
+  padding-left: 0px;
+  display: block;
+}
+.icon-circle.icon-circle-info:before{
+  font-size: 17px;
+  padding-top: 6px;
+  padding-left:0px;
+}
+.icon-circle.icon-interactive:before{
+  font-size: 15px;
+  padding-top: 8px;
+  padding-left:1px;
+}
+.icon-circle.icon-left:before{
+  padding-left: 0;
+  font-size: 14px;
+  padding-right: 3px;
+  padding-top: 6px;
+}
+.icon-circle.icon-list:before{
+  font-size: 15px;
+  padding-left: 0;
+  padding-top: 7px;
+  padding-right: 1px;
+}
+.icon-circle.icon-pause:before{
+  font-size: 15px;
+  padding-left: 0;
+  padding-top:7px;
+}
+.icon-circle.icon-photo:before{
+  padding-left: 0;
+  padding-top: 6px;
+  font-size: 15px;
+  padding-right: 1px;
+}
+.icon-circle.icon-play:before{
+  padding-left: 1px;
+  padding-top: 1px;
+  font-size: 14px;
+  display: block;
+}
+.icon-circle.icon-replay:before{
+  font-size: 16px;
+  padding-top: 0px;
+  padding-left: 1px;
+  display: block;
+  margin-top: -1px;
+}
+.icon-circle.icon-right:before{
+  font-size: 14px;
+  padding-left: 1px;
+  padding-top: 6px;
+}
+.icon-circle.icon-search:before{
+  font-size: 15px;
+  padding-left: 0;
+  padding-top:7px;
+}
+.icon-circle.icon-share:before{
+  padding-top: 1px;
+  font-size: 13px;
+  padding-left: 1px;
+  display: block;
+}
+.icon-circle.icon-star:before{
+  font-size: 14px;
+  padding-left: 0;
+  padding-top: 0px;
+  padding-right: 1px;
+  display: block;
+}
+.icon-circle.icon-touch:before{
+  padding-left: 0;
+  font-size: 14px;
+  padding-right: 2px;
+}
+.icon-circle.icon-up:before{
+  font-size: 14px;
+  padding-left: 0;
+}

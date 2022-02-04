@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js webgl - custom attributes [particles]</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - custom attributes example - particles</div>
+		<input id="slider" type="range" min="0" max="1" step="0.01" value="0.5" style="position:absolute;width:300px;">
+		<div id="container"></div>
+		<script type="x-shader/x-vertex" id="vertexshader">
+
+			uniform float interpolation;
+			uniform float time;
+
+			attribute float size;
+			attribute vec3 customColor;
+      attribute vec4 endposition;
+
+			varying vec3 vColor;
+
+			void main() {
+
+				vColor = customColor;
+				vec3 newposition = mix(position.xyz,endposition.xyz,interpolation);
+
+				vec4 mvPosition = modelViewMatrix * vec4( newposition, 1.0 );
+				gl_PointSize = size * ( 300.0 / -mvPosition.z );
+				gl_Position = projectionMatrix * mvPosition;
+			}
+
+		</script>
+
+		<script type="x-shader/x-fragment" id="fragmentshader">
+
+			uniform vec3 color;
+			uniform sampler2D pointTexture;
+
+			varying vec3 vColor;
+
+			void main() {
+
+				gl_FragColor = vec4( color * vColor, 1.0 );
+				gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+
+			}
+
+		</script>
+
+		<script type="module">
+
+      import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.min.js';
+
+      import Stats from 'https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js';
+
+			let renderer, scene, camera, stats;
+
+			let sphere, material;
+
+			const WIDTH = window.innerWidth;
+			const HEIGHT = window.innerHeight;
+
+			init();
+			animate();
+
+			function init() {
+
+				camera = new THREE.PerspectiveCamera( 40, WIDTH / HEIGHT, 1, 10000 );
+				camera.position.z = 300;
+
+				scene = new THREE.Scene();
+
+				const amount = 1000;
+				const radius = 20;
+
+				const positions = new Float32Array( amount * 3 );
+				const colors = new Float32Array( amount * 3 );
+				const sizes = new Float32Array( amount );
+
+				const vertex = new THREE.Vector3();
+				const color = new THREE.Color( 0xffffff );
+
+        const endpositions = new Float32Array( amount * 3);
+        const endvertex = new THREE.Vector3();
+        const endradius = 50;
+
+				for ( let i = 0; i < amount; i ++ ) {
+
+					vertex.x = ( Math.random() * 2 - 1 ) * radius;
+					vertex.y = ( Math.random() * 2 - 1 ) * radius;
+					vertex.z = ( Math.random() * 2 - 1 ) * radius;
+					vertex.toArray( positions, i * 3 );
+
+          endvertex.x = ( Math.random() * 2 - 1 ) * endradius;
+					endvertex.y = ( Math.random() * 2 - 1 ) * endradius;
+					endvertex.z = ( Math.random() * 2 - 1 ) * endradius;
+					endvertex.toArray( endpositions, i * 3 );
+
+					if ( vertex.x < 0 ) {
+
+						color.setHSL( 0.5 + 0.1 * ( i / amount ), 0.7, 0.5 );
+
+					} else {
+
+						color.setHSL( 0.0 + 0.1 * ( i / amount ), 0.9, 0.5 );
+
+					}
+
+					color.toArray( colors, i * 3 );
+
+					sizes[ i ] = 10;
+
+				}
+
+				const geometry = new THREE.BufferGeometry();
+				geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+				geometry.setAttribute( 'customColor', new THREE.BufferAttribute( colors, 3 ) );
+				geometry.setAttribute( 'size', new THREE.BufferAttribute( sizes, 1 ) );
+        geometry.setAttribute( 'endposition', new THREE.BufferAttribute( endpositions, 3 ) );
+
+				//
+
+				material = new THREE.ShaderMaterial( {
+
+					uniforms: {
+						color: { value: new THREE.Color( 0xffffff ) },
+						pointTexture: { value: new THREE.TextureLoader().load( "jungle.jpg" ) },
+            time: { type: 'f', value: 0},
+						interpolation: {value: 0}
+					},
+					vertexShader: document.getElementById( 'vertexshader' ).textContent,
+					fragmentShader: document.getElementById( 'fragmentshader' ).textContent,
+
+					blending: THREE.AdditiveBlending,
+					depthTest: false,
+					transparent: true
+
+				} );
+
+				//
+
+				sphere = new THREE.Points( geometry, material );
+				scene.add( sphere );
+
+				//
+
+				renderer = new THREE.WebGLRenderer();
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( WIDTH, HEIGHT );
+
+				const container = document.getElementById( 'container' );
+				container.appendChild( renderer.domElement );
+
+				stats = new Stats();
+				container.appendChild( stats.dom );
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			var clock = new THREE.Clock();
+			var timeVal = 0;
+
+			function animate() {
+				timeVal += clock.getElapsedTime();
+				material.uniforms.interpolation.value = timeVal;
+				requestAnimationFrame( animate );
+				render();
+				stats.update();
+
+			}
+
+			function render() {
+				renderer.render( scene, camera );
+			}
+
+		</script>
+
+</body>
+
+</html>

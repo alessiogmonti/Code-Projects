@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Forecasting Securities</title>
+  </head>
+  <body>
+    <div class="graphText">
+      <div class="title">
+        <h1> Neural Network based <br> Technical Analysis </h1>
+      </div>
+      <div class="num"> <span class="dig1">0 </span> <span class="dig2"> 1</span>
+      </div>
+      <div id='container' class="container">
+        <div id='graph'></div>
+        <div id = 'container2'>
+          <div id='sections'>
+            <div class="description">
+              <p> A neural network takes in a series of inputs, or "features", that are
+                the columns of a dataset. In this example, the features are the price predictions of a series of
+                technical indicators.
+              </p>
+              <p> The most basic technical indicator, and the cornerstone of many predictive strategies, is the
+                moving average. This is simply the average of the security's price for the last <b class="bold"> n </b> days.<br>
+                In this graph, <b class="bold"> n = 30: </b>
+              </p>
+            </div>
+
+            <div class="description">
+              <p> Bollinger Bands are another type of popular indicator. These combine the security's standard deviation (σ) and
+                its moving average. Bollinger bands reflect price changes- the closer the prices are to the upper band, the more
+                overbought the market, and vice versa. The distance between the two bands is a measure of <i>volatility</i>.
+                <br>
+                In this graph, <b class="bold"> σ = 2 </b>. <p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id='container3' class="container3">
+        <!-- <div id='graph2'></div> -->
+        <div id = 'container4'>
+          <div id='sections'>
+              <div class="description">
+                <p> A neural network takes in a series of inputs, or "features", that are
+                  the columns of a dataset. In this example, the features are the price predictions of a series of
+                  technical indicators.
+                </p>
+                <p> The most basic technical indicator, and the cornerstone of many predictive strategies, is the
+                  moving average. This is simply the average of the security's price for the last <b class="bold"> n </b> days.<br>
+                  In this graph, <b class="bold"> n = 30: </b>
+                </p>
+              </div>
+
+              <div class="description">
+                <p> Bollinger Bands are another type of popular indicator. These combine the security's standard deviation (σ) and
+                  its moving average. Bollinger bands reflect price changes- the closer the prices are to the upper band, the more
+                  overbought the market, and vice versa. The distance between the two bands is a measure of <i>volatility</i>.
+                  <br>
+                  In this graph, <b class="bold"> σ = 2 </b>. <p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src='graph-scroll.js'></script>
+    <script src='script.js'></script>
+  </body>
+</html>

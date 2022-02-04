@@ -1,0 +1,49 @@
+html{
+  font-size: 4px;
+  font-family: 'Source Sans Pro Extra-light 200', sans-serif;
+  color: black;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  line-height: 22rem;
+  font-size: 17rem;
+  letter-spacing: 0.9rem;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  transform: scale(1,1);
+  /* -webkit-text-stroke-width: .1rem;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: black; */
+  user-select: none;
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+h6{
+  font-family: 'Source Sans Pro';
+  font-size: 6.6rem;
+  font-weight: 300;
+  color: #1956F0;
+  font-style: italic;
+}
+
+p{
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 4.5rem;
+  line-height: 7rem;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.heading{
+  width: 75%;
+  padding-left: 3rem;
+}

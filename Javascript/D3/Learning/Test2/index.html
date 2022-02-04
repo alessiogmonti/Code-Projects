@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Graphs of the US Economy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .axis path {display: none;}
+    /* .path1 path{display: none;} */
+    </style>
+  </head>
+  <body>
+    <!-- <div class='heading'><h1>PLTR Data</h1></div> -->
+    <div id='my_dataviz'> </div>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script>
+      // set the dimensions and margins of the graph
+      var margin = {top: 10, right: 30, bottom: 35, left: 60},
+          width = 460 - margin.left - margin.right;
+          height = 450 - margin.top - margin.bottom;
+      // append the svg object to the body of the page
+      var svg = d3.select("#my_dataviz")
+        .append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      //Read the data
+
+      d3.csv("AdjPLTR.csv",
+        function(d){
+          return { date : d3.timeParse("%Y-%m-%d")(d.Date), value : d.AdjClose }
+        },
+
+        function(data){
+
+          var x = d3.scaleTime()
+            .domain(d3.extent(data, function(d) { return d.date; }))
+            .range([0, width]);
+
+          svg.append("g")
+            .attr("class", "axis axis--x")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(x)
+            .ticks(d3.timeMonth, 2).tickFormat(d3.timeFormat('%b')))
+            .selectAll('text')
+            .attr("x", 10)
+            .attr("y", 12)
+            .attr("transform", "rotate(35)")
+
+          var y = d3.scaleLinear()
+            .domain([9, d3.max(data, function(d) { return +d.value; })+5])
+            .range([ height,0 ]);
+
+          svg.append("g")
+            .attr("class", "axis axis--y")
+            .call(d3.axisLeft(y)
+            .ticks(4))
+            .append("text")
+            .attr("x", 4)
+            .attr("y", 0.5)
+            .attr("dy", "0.32em")
+            .style("text-anchor", "start")
+            .style("fill", "#000")
+            .style("font-weight", "bold")
+            .text("Adj. Close");
+
+          svg.append("path")
+            .datum(data)
+            .attr("fill", "none")
+            .attr("stroke", "steelblue")
+            .attr("stroke-width", .9)
+            .attr("d", d3.line()
+              .x(function(d) { return x(d.date) })
+              .y(function(d) { return y(d.value) })
+              )
+
+          svg.append("path")
+            .datum(data)
+            .attr("fill", "none")
+            .attr("stroke", "black")
+            .attr("stroke-width", 1)
+            .attr("d", d3.line()
+              .x(function(d) { return x(d.date) })
+              .y(function(d) { return y(d.value) })
+            ).append("text")
+        }
+      )
+    </script>
+  </body>
+</html>

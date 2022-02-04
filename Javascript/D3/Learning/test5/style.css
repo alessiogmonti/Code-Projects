@@ -1,0 +1,36 @@
+
+#graph {
+    margin-left: 50px;
+}
+
+svg{
+  background-color: rgba(180,190,210,0.1);
+}
+
+.points {
+    visibility: hidden;
+}
+
+.points:hover {
+    visibility: visible;
+}
+
+.tooltip{
+  font-family: 'Helvetica';
+  font-size: 8px;
+  text-transform: uppercase;
+  padding: 4px;
+  border-radius: 3px;
+  border: 0.5px solid rgba(235,235,235,1);
+  background-color: rgba(235, 235, 235, 0.9);
+}
+
+.xline{
+  opacity: 0.7;
+  color: rgba(50,50,50,1);
+}
+.xline path{
+  color: #fff;
+  stroke-width:3;
+  opacity: 0;
+}

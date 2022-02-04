@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Graphs of the US Economy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class='heading'><h1>National US Gross Domestic Product by Industry</h1></div>
+    <div id='my_dataviz'> </div>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script>
+      // d3.csv("streamgraphT.csv", function(data) {
+      //   for (var i=0; i<data.length; i++){
+      //     console.log(data[i].Period);
+      //   }});
+      d3.csv("streamgraphT.csv")
+        .row(function(d){
+          return{
+            Period: parseFloat(d.Period.toString().replace("Q","."))
+          };
+        })
+        .get(function(data){
+          for (var i = 0; i < data.length; i++) {
+            console.log(typeof(data[i].Period));
+          }
+        });
+    </script>
+  </body>
+</html>

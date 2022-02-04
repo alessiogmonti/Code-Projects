@@ -1,0 +1,78 @@
+
+{
+ "name": "Projects",
+ "img": "-",
+ "children": [
+  {
+   "name": "Data Science",
+   "children": [
+    {
+      "title": "null",
+      "description": "null",
+      "link": "null",
+      "img":  "null",
+      "size": 40000
+    },
+    {
+      "title": "null",
+      "description": "null",
+      "link": "null",
+      "img":  "null",
+      "size": 40000
+    }
+  ]
+  },
+  {
+   "name": "Algorithmic 3D Models",
+   "children": [
+    {
+      "title": "AID",
+      "description": "A parametric, programmatically created structure",
+      "link": "null(link to webpage here)",
+      "img":  "aidG.jpg",
+      "size": 40000
+    },
+    {
+      "title": "Flight",
+      "description": "A parametric, programmatically created structure",
+      "link": "null(link to webpage here)",
+      "img":  "flight.jpg",
+      "size": 40000
+    },
+    {
+      "title": "Swan",
+      "description": "A parametric, programmatically created structure",
+      "link": "null(link to webpage here)",
+      "img":  "swan.jpg",
+      "size": 40000
+    },
+    {
+      "title": "Ultra",
+      "description": "A parametric, programmatically created structure",
+      "link": "null(link to webpage here)",
+      "img":  "ultra.jpg",
+      "size": 40000
+    },
+    {
+      "title": "Helmet",
+      "description": "A parametric, programmatically created structure",
+      "link": "null(link to webpage here)",
+      "img":  "helmet.jpg",
+      "size": 40000
+    }
+   ]
+  },
+  {
+   "name": "Data Visualization",
+   "children": [
+    {
+      "title": "TSLA Voronoi",
+      "description": "A programmatically defined visualization of Tesla stock data",
+      "link": "null(link to webpage here)",
+      "img":  "aidG.jpg",
+      "size": 40000
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+Saudi_Arabia	1877	1877	Nigeria	4850	4850
+Malaysia	4917	4917	Other-Africa	10480	10480
+Nigeria	4850	4850	France	16791	16791
+Portugal	1183	1183	Malaysia	4917	4917
+Other-Asia_and_Pacific	2577	2577	Saudi Arabia	1877	1877
+Nigeria	4850	4850	Latin America and Other Western Hemisphere	75285	75285
+Indonesia	3526	3526	Switzerland	43427	43427
+Peru	1901	1901	Indonesia	3526	3526
+South_Korea	6962	6962	Ireland	107898	107898

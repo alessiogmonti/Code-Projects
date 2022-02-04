@@ -1,0 +1,41 @@
+svg{
+  background-color: rgba(180,190,210,0.1);
+}
+
+#graph{
+  padding-top: 50px;
+  position: sticky;
+  width: 75%;
+  top: 0;
+  float: right;
+}
+
+#sections{
+  /* display: inline-block; */
+  /* float: right; */
+  width: 500px;
+}
+
+#sections > div{
+  background: white;
+  opacity: .2;
+  margin-bottom: 300px;
+}
+
+#sections > div.graph-scroll-active{
+  opacity: 1;
+}
+
+#sections > div:last-child{
+  margin-bottom: 650px;
+}
+
+#container{
+  top: 0;
+  overflow: none;
+  position: relative;
+}
+
+.mouse-line{
+  transform: scaleY(0.90) translate(0,1px);
+}

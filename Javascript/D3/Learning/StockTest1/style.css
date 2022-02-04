@@ -1,0 +1,143 @@
+html{
+  font-size: 3px;
+  font-family: 'Source Sans Pro Extra-light 200', sans-serif;
+  color: black;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+.title{
+  position: fixed;
+  padding-left: 40rem;
+  width: 75%;
+  margin-top: 0rem;
+}
+
+.title h1{
+  line-height:22rem;
+  font-size: 22rem;
+  letter-spacing: 0.8rem;
+  font-family: 'Glory';
+  font-weight: 400;
+  user-select: none;
+  font-style: italic;
+  text-transform: lowercase;
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+}
+
+.dig1{
+  position: fixed;
+  left: 80%;
+  top: 23rem;
+  line-height: 17rem;
+  font-size: 65rem;
+  letter-spacing: 0.8rem;
+  font-family: 'Glory';
+  font-weight: 400;
+}
+
+.dig2{
+  position: fixed;
+  top: 27rem;
+  left:91%;
+  line-height: 17rem;
+  font-size: 75rem;
+  letter-spacing: 0.8rem;
+  font-family: 'Glory';
+  font-weight: 400;
+}
+
+.bold{
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* GRAPH SCROLL START */
+.description{
+  position: relative;
+  left: 74%;
+  width: 22%;
+  top: -50%;
+}
+
+.description p{
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 9rem;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+#container2{
+  display: inline-flex;
+}
+
+#graph {
+  padding-top: 65rem;
+  padding-left: 17rem;
+  display: inline-flex;
+  position: sticky;
+  top:4rem;
+}
+
+#sections > div{
+  /* background: white; */
+  opacity: .1;
+  margin-bottom: 200px;
+}
+
+#sections > div:last-child{
+  margin-bottom: 30px;
+}
+
+#sections > div.graph-scroll-active{
+  opacity: 1;
+}
+/* GRAPH SCROLL END */
+
+
+/* GRAPH START */
+svg{
+  background-color: rgba(180,190,210,0.1);
+}
+
+.mouse-line{
+  transform: scaleY(0.77) translate(0,66px);
+}
+
+.xline{
+  opacity: 1;
+  color: rgba(50,50,50,1);
+}
+
+.xline path{
+  color: rgba(50,50,50,1);
+  stroke-width:0.5;
+  opacity: 0.7;
+}
+/* GRAPH END */
+
+
+
+
+
+
+/* .points {
+    visibility: hidden;
+}
+
+.points:hover {
+    visibility: visible;
+}
+
+.tooltip{
+  font-family: 'Helvetica';
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 3px;
+  border: 0.5px solid rgba(235,235,235,1);
+  background-color: rgba(245, 245, 245, 0.9);
+} */

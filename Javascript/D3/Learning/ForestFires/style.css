@@ -1,0 +1,127 @@
+body{
+  font-family: menlo, Consolas, 'Lucida Console', monospace;
+  margin: 0px;
+}
+
+.tooltip {
+  top: -1000px;
+  position: fixed;
+  padding: 10px;
+  background: rgba(255, 255, 255, .90);
+  border: 1px solid lightgray;
+  pointer-events: none;
+}
+.tooltip-hidden{
+  opacity: 0;
+  transition: all .3s;
+  transition-delay: .1s;
+}
+
+@media (max-width: 590px){
+  div.tooltip{
+    bottom: -1px;
+    width: calc(100%);
+    left: -1px !important;
+    right: -1px !important;
+    top: auto !important;
+    width: auto !important;
+  }
+}
+
+svg{
+  overflow: hidden;
+}
+
+.domain{
+  display: none;
+}
+
+text{
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+}
+
+text.fire-label{
+  fill: rgba(0,0,0,.5);
+}
+
+.axis text.index-label{
+  /*text-shadow: 0 20px 0 #fff, 20px 0 0 #fff, 0 -20px 0 #fff, -20px 0 0 #fff;*/
+  /*stroke: red;*/
+  stroke-width: 5;
+  opacity: 1;
+}
+
+.axis text{
+  font-size: 10px;
+  font-family: sans-serif;
+  font-family: menlo, Consolas, 'Lucida Console', monospace;
+
+  opacity: .5;
+}
+.y line, .x line{
+  opacity: .1;
+}
+
+
+
+.year{
+  opacity: .3;
+}
+.year path{
+  stroke: #000;
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+.year text{
+  font-size: 10px;
+}
+
+.year:hover{
+  opacity: 1;
+}
+
+.year.this-year{
+  opacity: 1 !important;
+}
+.year.this-year path{
+  stroke: #B53023;
+}
+.year.this-year text{
+  fill: #B53023;
+}
+
+.x .domain{
+  display: none;
+}
+
+
+
+.button{
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+  background: #fff;
+  border-radius: 0px;
+  outline: .5px solid #aaa;
+  color: #bbb;
+  margin-right: -9px;
+  position: relative;
+}
+
+.button:hover{
+  outline: 1px solid #000;
+  z-index: 1000;
+}
+
+.button.active{
+  color: #000;
+  background: #ddd;
+}
+
+#graph > div{
+  width: 0px !important;
+  height: 0px !important;
+  overflow: visible;
+}

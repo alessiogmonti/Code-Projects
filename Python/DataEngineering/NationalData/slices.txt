@@ -1,0 +1,1201 @@
+Africa 0 2299.0
+Africa 2300.0 3838.0
+Africa 3839.0 5690.0
+Africa 5691.0 7295.0
+Africa 7296.0 9123.0
+Africa 9124.0 11171.0
+Africa 11172.0 11388.0
+Africa 11389.0 12374.0
+Africa 12375.0 13713.0
+Africa 13714.0 18408.0
+Africa 18409.0 18425.0
+Africa 18426.0 20569.0
+Africa 20570.0 23400.0
+Africa 23401.0 25796.0
+Africa 25797.0 25937.0
+Africa 25938.0 26344.0
+Africa 26345.0 32020.0
+Africa 32021.0 33131.0
+Africa 33132.0 36105.0
+Africa 36106.0 37486.0
+Africa 37487.0 38901.0
+All Countries Total 0 61756.0
+All Countries Total 61757.0 74188.0
+All Countries Total 74189.0 85813.0
+All Countries Total 85814.0 112297.0
+All Countries Total 112298.0 118907.0
+All Countries Total 118908.0 138947.0
+All Countries Total 138948.0 154334.0
+All Countries Total 154335.0 175725.0
+All Countries Total 175726.0 193065.0
+All Countries Total 193066.0 224115.0
+All Countries Total 224116.0 272440.0
+All Countries Total 272441.0 314401.0
+All Countries Total 314402.0 331930.0
+All Countries Total 331931.0 349067.0
+All Countries Total 349068.0 361836.0
+All Countries Total 361837.0 364580.0
+All Countries Total 364581.0 382550.0
+All Countries Total 382551.0 402831.0
+All Countries Total 402832.0 441636.0
+All Countries Total 441637.0 531950.0
+All Countries Total 531951.0 630671.0
+All Countries Total 630672.0 696753.0
+Argentina 0 914.0
+Argentina 915.0 1052.0
+Argentina 1053.0 1204.0
+Argentina 1205.0 1828.0
+Argentina 1829.0 2522.0
+Argentina 2523.0 3157.0
+Argentina 3158.0 3229.0
+Argentina 3230.0 3657.0
+Argentina 3658.0 7317.0
+Argentina 7318.0 7770.0
+Argentina 7771.0 8214.0
+Argentina 8215.0 8710.0
+Argentina 8711.0 9808.0
+Argentina 9809.0 10366.0
+Argentina 10367.0 15821.0
+Argentina 15822.0 16732.0
+Asia and Pacific 0 11194.0
+Asia and Pacific 11195.0 11209.0
+Asia and Pacific 11210.0 16642.0
+Asia and Pacific 16643.0 24224.0
+Asia and Pacific 24225.0 29769.0
+Asia and Pacific 29770.0 37025.0
+Asia and Pacific 37026.0 47962.0
+Asia and Pacific 47963.0 54224.0
+Asia and Pacific 54225.0 62278.0
+Asia and Pacific 62279.0 73918.0
+Asia and Pacific 73919.0 78011.0
+Asia and Pacific 78012.0 78939.0
+Asia and Pacific 78940.0 82321.0
+Asia and Pacific 82322.0 95238.0
+Asia and Pacific 95239.0 105069.0
+Asia and Pacific 105070.0 111923.0
+Asia and Pacific 111924.0 112898.0
+Asia and Pacific 112899.0 122920.0
+Asia and Pacific 122921.0 127538.0
+Asia and Pacific 127539.0 172658.0
+Asia and Pacific 172659.0 177337.0
+Asia and Pacific 177338.0 188494.0
+Australia 0 503.0
+Australia 504.0 1211.0
+Australia 1212.0 1685.0
+Australia 1686.0 8612.0
+Australia 8613.0 12665.0
+Australia 12666.0 16019.0
+Australia 16020.0 21511.0
+Australia 21512.0 23755.0
+Australia 23756.0 24419.0
+Australia 24420.0 27213.0
+Australia 27214.0 36808.0
+Australia 36809.0 40549.0
+Australia 40550.0 49241.0
+Australia 49242.0 58321.0
+Australia 58322.0 71441.0
+Australia 71442.0 72707.0
+Australia 72708.0 74747.0
+Australia 74748.0 81732.0
+Australia 81733.0 85483.0
+Australia 85484.0 85486.0
+Australia 85487.0 88264.0
+Austria 0 374.0
+Austria 375.0 376.0
+Austria 377.0 793.0
+Austria 794.0 958.0
+Austria 959.0 1564.0
+Austria 1565.0 2754.0
+Austria 2755.0 3212.0
+Austria 3213.0 3279.0
+Austria 3280.0 3405.0
+Austria 3406.0 3441.0
+Austria 3442.0 3503.0
+Austria 3504.0 3599.0
+Barbados 0 278.0
+Barbados 279.0 876.0
+Barbados 877.0 4187.0
+Barbados 4188.0 4896.0
+Barbados 4897.0 5273.0
+Barbados 5274.0 5660.0
+Belgium 0 113.0
+Belgium 114.0 2403.0
+Belgium 2404.0 5245.0
+Belgium 5246.0 6570.0
+Belgium 6571.0 7098.0
+Belgium 7099.0 7782.0
+Belgium 7783.0 8083.0
+Belgium 8084.0 8214.0
+Belgium 8215.0 8970.0
+Belgium 8971.0 10161.0
+Belgium 10162.0 12938.0
+Belgium 12939.0 13004.0
+Belgium 13005.0 16384.0
+Belgium 16385.0 17224.0
+Belgium 17225.0 19637.0
+Belgium 19638.0 26392.0
+Belgium 26393.0 26827.0
+Belgium 26828.0 27601.0
+Bermuda 0 1927.0
+Bermuda 1928.0 2185.0
+Bermuda 2186.0 4530.0
+Bermuda 4531.0 7579.0
+Bermuda 7580.0 15975.0
+Bermuda 15976.0 19719.0
+Bermuda 19720.0 22640.0
+Bermuda 22641.0 29232.0
+Bermuda 29233.0 31221.0
+Bermuda 31222.0 36281.0
+Bermuda 36282.0 52633.0
+Bermuda 52634.0 63673.0
+Bermuda 63674.0 69301.0
+Bermuda 69302.0 78361.0
+Bermuda 78362.0 90392.0
+Bermuda 90393.0 98991.0
+Bermuda 98992.0 101604.0
+Bermuda 101605.0 110762.0
+Bermuda 110763.0 113469.0
+Bermuda 113470.0 145000.0
+Bermuda 145001.0 156325.0
+Brazil 0 935.0
+Brazil 936.0 1036.0
+Brazil 1037.0 1200.0
+Brazil 1201.0 1222.0
+Brazil 1223.0 1479.0
+Brazil 1480.0 2515.0
+Brazil 2516.0 2896.0
+Brazil 2897.0 3593.0
+Brazil 3594.0 3662.0
+Brazil 3663.0 3729.0
+Brazil 3730.0 4798.0
+Brazil 4799.0 5711.0
+Brazil 5712.0 5751.0
+Brazil 5752.0 5902.0
+Brazil 5903.0 5932.0
+Brazil 5933.0 8660.0
+Brazil 8661.0 9730.0
+Brazil 9731.0 12945.0
+Brazil 12946.0 14582.0
+Brazil 14583.0 15974.0
+Brazil 15975.0 17636.0
+Brazil 17637.0 21090.0
+Canada 0 4688.0
+Canada 4689.0 5592.0
+Canada 5593.0 7148.0
+Canada 7149.0 12094.0
+Canada 12095.0 16810.0
+Canada 16811.0 18628.0
+Canada 18629.0 18944.0
+Canada 18945.0 36773.0
+Canada 36774.0 38959.0
+Canada 38960.0 46284.0
+Canada 46285.0 48048.0
+Canada 48049.0 48519.0
+Canada 48520.0 59265.0
+Canada 59266.0 61215.0
+Canada 61216.0 61321.0
+Canada 61322.0 61544.0
+Canada 61545.0 65733.0
+Canada 65734.0 65999.0
+Canada 66000.0 67891.0
+Canada 67892.0 70317.0
+Canada 70318.0 73092.0
+Canada 73093.0 74571.0
+Central America 0 2625.0
+Central America 2626.0 2734.0
+Central America 2735.0 3738.0
+Central America 3739.0 5784.0
+Central America 5785.0 7368.0
+Central America 7369.0 8582.0
+Central America 8583.0 10779.0
+Central America 10780.0 10910.0
+Central America 10911.0 14079.0
+Central America 14080.0 14372.0
+Central America 14373.0 17262.0
+Central America 17263.0 17759.0
+Central America 17760.0 20058.0
+Central America 20059.0 20241.0
+Central America 20242.0 22251.0
+Central America 22252.0 22894.0
+Central America 22895.0 23014.0
+Central America 23015.0 24021.0
+Central America 24022.0 24599.0
+Central America 24600.0 25258.0
+Central America 25259.0 26347.0
+Chile 0 243.0
+Chile 244.0 531.0
+Chile 532.0 897.0
+Chile 898.0 1221.0
+Chile 1222.0 1407.0
+Chile 1408.0 1630.0
+Chile 1631.0 1662.0
+Chile 1663.0 2084.0
+Chile 2085.0 2910.0
+Chile 2911.0 3173.0
+Chile 3174.0 3177.0
+Chile 3178.0 3628.0
+Chile 3629.0 4034.0
+Chile 4035.0 4177.0
+Chile 4178.0 4550.0
+China 0 356.0
+China 357.0 1037.0
+China 1038.0 1190.0
+China 1191.0 1684.0
+China 1685.0 2135.0
+China 2136.0 3462.0
+China 3463.0 3737.0
+China 3738.0 4100.0
+China 4101.0 5818.0
+China 5819.0 6604.0
+China 6605.0 6621.0
+China 6622.0 6778.0
+China 6779.0 7501.0
+China 7502.0 7856.0
+China 7857.0 8099.0
+China 8100.0 8288.0
+China 8289.0 8496.0
+China 8497.0 10159.0
+China 10160.0 10989.0
+China 10990.0 11042.0
+China 11043.0 11362.0
+Colombia 0 231.0
+Colombia 232.0 681.0
+Colombia 682.0 1075.0
+Colombia 1076.0 1191.0
+Colombia 1192.0 1804.0
+Colombia 1805.0 2150.0
+Colombia 2151.0 2603.0
+Colombia 2604.0 2889.0
+Colombia 2890.0 3378.0
+Colombia 3379.0 3554.0
+Colombia 3555.0 3650.0
+Colombia 3651.0 3800.0
+Colombia 3801.0 4053.0
+Costa Rica 0 413.0
+Costa Rica 414.0 878.0
+Costa Rica 879.0 1026.0
+Costa Rica 1027.0 2280.0
+Costa Rica 2281.0 2346.0
+Costa Rica 2347.0 2532.0
+Costa Rica 2533.0 2853.0
+Costa Rica 2854.0 2868.0
+Costa Rica 2869.0 3056.0
+Czech Republic 0 135.0
+Czech Republic 136.0 218.0
+Czech Republic 219.0 347.0
+Czech Republic 348.0 366.0
+Czech Republic 367.0 445.0
+Czech Republic 446.0 541.0
+Czech Republic 542.0 743.0
+Czech Republic 744.0 1072.0
+Czech Republic 1073.0 1271.0
+Czech Republic 1272.0 1344.0
+Czech Republic 1345.0 1372.0
+Czech Republic 1373.0 1761.0
+Czech Republic 1762.0 1885.0
+Denmark 0 167.0
+Denmark 168.0 358.0
+Denmark 359.0 729.0
+Denmark 730.0 844.0
+Denmark 845.0 893.0
+Denmark 894.0 1219.0
+Denmark 1220.0 2121.0
+Dominican Republic 0 20.0
+Dominican Republic 21.0 128.0
+Dominican Republic 129.0 185.0
+Dominican Republic 186.0 219.0
+Dominican Republic 220.0 385.0
+Dominican Republic 386.0 422.0
+Dominican Republic 423.0 476.0
+Dominican Republic 477.0 519.0
+Dominican Republic 520.0 601.0
+Dominican Republic 602.0 669.0
+Dominican Republic 670.0 695.0
+Dominican Republic 696.0 732.0
+Dominican Republic 733.0 766.0
+Eastern Europe 0 1655.0
+Eastern Europe 1656.0 2998.0
+Ecuador 0 40.0
+Ecuador 41.0 79.0
+Ecuador 80.0 330.0
+Ecuador 331.0 457.0
+Ecuador 458.0 578.0
+Ecuador 579.0 730.0
+Ecuador 731.0 770.0
+Ecuador 771.0 802.0
+Ecuador 803.0 813.0
+Ecuador 814.0 816.0
+Ecuador 817.0 983.0
+Ecuador 984.0 992.0
+Egypt 0 42.0
+Egypt 43.0 390.0
+Egypt 391.0 426.0
+Egypt 427.0 632.0
+Egypt 633.0 1582.0
+Egypt 1583.0 1861.0
+Egypt 1862.0 1897.0
+Egypt 1898.0 1953.0
+Egypt 1954.0 2315.0
+Egypt 2316.0 4242.0
+Egypt 4243.0 5756.0
+Egypt 5757.0 6441.0
+Europe 0 34769.0
+Europe 34770.0 42620.0
+Europe 42621.0 59228.0
+Europe 59229.0 73729.0
+Europe 73730.0 79996.0
+Europe 79997.0 90682.0
+Europe 90683.0 111961.0
+Europe 111962.0 113324.0
+Europe 113325.0 127576.0
+Europe 127577.0 140928.0
+Europe 140929.0 156052.0
+Europe 156053.0 179356.0
+Europe 179357.0 196514.0
+Europe 196515.0 196987.0
+Europe 196988.0 207835.0
+Europe 207836.0 218146.0
+Europe 218147.0 238564.0
+Europe 238565.0 243756.0
+Europe 243757.0 276725.0
+Europe 276726.0 394430.0
+Europe 394431.0 485279.0
+Europe 485280.0 555319.0
+European Union 0 27392.0
+European Union 27393.0 34410.0
+European Union 34411.0 49055.0
+European Union 49056.0 67182.0
+European Union 67183.0 72382.0
+European Union 72383.0 82529.0
+European Union 82530.0 102034.0
+European Union 102035.0 105097.0
+European Union 105098.0 115248.0
+European Union 115249.0 131486.0
+European Union 131487.0 147479.0
+European Union 147480.0 160539.0
+European Union 160540.0 178591.0
+European Union 178592.0 180179.0
+European Union 180180.0 184677.0
+European Union 184678.0 199291.0
+European Union 199292.0 215004.0
+European Union 215005.0 216114.0
+European Union 216115.0 263317.0
+European Union 263318.0 376729.0
+European Union 376730.0 446978.0
+European Union 446979.0 535082.0
+Finland 0 153.0
+Finland 154.0 182.0
+Finland 183.0 258.0
+Finland 259.0 369.0
+Finland 370.0 392.0
+Finland 393.0 697.0
+Finland 698.0 1009.0
+Finland 1010.0 1365.0
+Finland 1366.0 1368.0
+Finland 1369.0 1405.0
+Finland 1406.0 1408.0
+Finland 1409.0 2890.0
+Finland 2891.0 4478.0
+France 0 1044.0
+France 1045.0 1631.0
+France 1632.0 2379.0
+France 2380.0 3402.0
+France 3403.0 3438.0
+France 3439.0 6176.0
+France 6177.0 8008.0
+France 8009.0 8324.0
+France 8325.0 8703.0
+France 8704.0 13285.0
+France 13286.0 22237.0
+France 22238.0 24781.0
+France 24782.0 25828.0
+France 25829.0 27305.0
+France 27306.0 28884.0
+France 28885.0 30116.0
+France 30117.0 30726.0
+France 30727.0 31290.0
+France 31291.0 32051.0
+France 32052.0 33243.0
+France 33244.0 33335.0
+France 33336.0 33604.0
+Germany 0 2769.0
+Germany 2770.0 3180.0
+Germany 3181.0 6132.0
+Germany 6133.0 8846.0
+Germany 8847.0 10995.0
+Germany 10996.0 12190.0
+Germany 12191.0 13608.0
+Germany 13609.0 16952.0
+Germany 16953.0 17699.0
+Germany 17700.0 21326.0
+Germany 21327.0 25125.0
+Germany 25126.0 26979.0
+Germany 26980.0 28474.0
+Germany 28475.0 28814.0
+Germany 28815.0 30282.0
+Germany 30283.0 30459.0
+Germany 30460.0 33319.0
+Germany 33320.0 34681.0
+Germany 34682.0 35067.0
+Germany 35068.0 37055.0
+Germany 37056.0 42600.0
+Germany 42601.0 50926.0
+Greece 0 14.0
+Greece 15.0 111.0
+Greece 112.0 157.0
+Greece 158.0 162.0
+Greece 163.0 218.0
+Greece 219.0 274.0
+Greece 275.0 302.0
+Greece 303.0 322.0
+Greece 323.0 359.0
+Greece 360.0 383.0
+Greece 384.0 404.0
+Honduras 0 3.0
+Honduras 4.0 14.0
+Honduras 15.0 135.0
+Honduras 136.0 199.0
+Honduras 200.0 219.0
+Honduras 220.0 263.0
+Honduras 264.0 277.0
+Honduras 278.0 411.0
+Honduras 412.0 557.0
+Honduras 558.0 584.0
+Honduras 585.0 619.0
+Honduras 620.0 637.0
+Honduras 638.0 674.0
+Honduras 675.0 736.0
+Honduras 737.0 917.0
+Honduras 918.0 1158.0
+Hong Kong 0 1127.0
+Hong Kong 1128.0 1216.0
+Hong Kong 1217.0 2125.0
+Hong Kong 2126.0 2342.0
+Hong Kong 2343.0 5505.0
+Hong Kong 5506.0 9009.0
+Hong Kong 9010.0 9058.0
+Hong Kong 9059.0 14711.0
+Hong Kong 14712.0 22107.0
+Hong Kong 22108.0 24933.0
+Hong Kong 24934.0 28534.0
+Hong Kong 28535.0 30780.0
+Hong Kong 30781.0 33782.0
+Hong Kong 33783.0 34405.0
+Hong Kong 34406.0 36213.0
+Hong Kong 36214.0 37247.0
+Hong Kong 37248.0 41717.0
+Hong Kong 41718.0 41932.0
+Hong Kong 41933.0 45679.0
+Hungary 0 13.0
+Hungary 14.0 181.0
+Hungary 182.0 334.0
+Hungary 335.0 454.0
+Hungary 455.0 641.0
+Hungary 642.0 1307.0
+Hungary 1308.0 1833.0
+Hungary 1834.0 2166.0
+Hungary 2167.0 2263.0
+Hungary 2264.0 2513.0
+Hungary 2514.0 2840.0
+Hungary 2841.0 3637.0
+Hungary 3638.0 3722.0
+India 0 112.0
+India 113.0 202.0
+India 203.0 273.0
+India 274.0 413.0
+India 414.0 501.0
+India 502.0 560.0
+India 561.0 870.0
+India 871.0 1434.0
+India 1435.0 1549.0
+India 1550.0 1719.0
+India 1720.0 2298.0
+India 2299.0 2531.0
+India 2532.0 2652.0
+India 2653.0 2755.0
+India 2756.0 4121.0
+India 4122.0 5228.0
+India 5229.0 7210.0
+India 7211.0 7358.0
+India 7359.0 7580.0
+Indonesia 0 1188.0
+Indonesia 1189.0 1246.0
+Indonesia 1247.0 1455.0
+Indonesia 1456.0 1625.0
+Indonesia 1626.0 1676.0
+Indonesia 1677.0 2167.0
+Indonesia 2168.0 2383.0
+Indonesia 2384.0 2894.0
+Indonesia 2895.0 3509.0
+Indonesia 3510.0 5461.0
+Indonesia 5462.0 6233.0
+Indonesia 6234.0 7063.0
+Ireland 0 235.0
+Ireland 236.0 4889.0
+Ireland 4890.0 8306.0
+Ireland 8307.0 10521.0
+Ireland 10522.0 11867.0
+Ireland 11868.0 12396.0
+Ireland 12397.0 24952.0
+Ireland 24953.0 38133.0
+Ireland 38134.0 43224.0
+Ireland 43225.0 51793.0
+Ireland 51794.0 52706.0
+Ireland 52707.0 58455.0
+Ireland 58456.0 61044.0
+Ireland 61045.0 67036.0
+Ireland 67037.0 78016.0
+Ireland 78017.0 88714.0
+Ireland 88715.0 105507.0
+Ireland 105508.0 105518.0
+Ireland 105519.0 117640.0
+Ireland 117641.0 215815.0
+Israel 0 372.0
+Israel 373.0 398.0
+Israel 399.0 781.0
+Israel 782.0 962.0
+Israel 963.0 1366.0
+Israel 1367.0 1522.0
+Israel 1523.0 1823.0
+Italy 0 1776.0
+Italy 1777.0 1876.0
+Italy 1877.0 2404.0
+Italy 2405.0 2578.0
+Italy 2579.0 3041.0
+Italy 3042.0 4492.0
+Italy 4493.0 5734.0
+Italy 5735.0 5800.0
+Italy 5801.0 6941.0
+Italy 6942.0 7850.0
+Italy 7851.0 8113.0
+Italy 8114.0 8692.0
+Italy 8693.0 9394.0
+Italy 9395.0 10381.0
+Italy 10382.0 10642.0
+Italy 10643.0 10762.0
+Italy 10763.0 11271.0
+Italy 11272.0 12615.0
+Italy 12616.0 13267.0
+Italy 13268.0 13471.0
+Italy 13472.0 13889.0
+Italy 13890.0 14968.0
+Japan 0 6505.0
+Japan 6506.0 8260.0
+Japan 8261.0 15688.0
+Japan 15689.0 18467.0
+Japan 18468.0 25156.0
+Japan 25157.0 28020.0
+Japan 28021.0 29282.0
+Japan 29283.0 30597.0
+Japan 30598.0 31978.0
+Japan 31979.0 32273.0
+Japan 32274.0 33559.0
+Japan 33560.0 37405.0
+Japan 37406.0 42745.0
+Japan 42746.0 43802.0
+Japan 43803.0 59365.0
+Japan 59366.0 62270.0
+Japan 62271.0 74900.0
+Japan 74901.0 75998.0
+Japan 75999.0 80179.0
+Japan 80180.0 82597.0
+Japan 82598.0 89929.0
+Latin America and Other Western Hemisphere 0 8583.0
+Latin America and Other Western Hemisphere 8584.0 10026.0
+Latin America and Other Western Hemisphere 10027.0 11484.0
+Latin America and Other Western Hemisphere 11485.0 11959.0
+Latin America and Other Western Hemisphere 11960.0 24576.0
+Latin America and Other Western Hemisphere 24577.0 26311.0
+Latin America and Other Western Hemisphere 26312.0 26557.0
+Latin America and Other Western Hemisphere 26558.0 30287.0
+Latin America and Other Western Hemisphere 30288.0 42964.0
+Latin America and Other Western Hemisphere 42965.0 43317.0
+Latin America and Other Western Hemisphere 43318.0 66571.0
+Latin America and Other Western Hemisphere 66572.0 81888.0
+Latin America and Other Western Hemisphere 81889.0 82453.0
+Latin America and Other Western Hemisphere 82454.0 84730.0
+Latin America and Other Western Hemisphere 84731.0 92580.0
+Latin America and Other Western Hemisphere 92581.0 95626.0
+Latin America and Other Western Hemisphere 95627.0 102844.0
+Latin America and Other Western Hemisphere 102845.0 110946.0
+Latin America and Other Western Hemisphere 110947.0 112530.0
+Latin America and Other Western Hemisphere 112531.0 136956.0
+Latin America and Other Western Hemisphere 136957.0 137725.0
+Latin America and Other Western Hemisphere 137726.0 150591.0
+Luxembourg 0 473.0
+Luxembourg 474.0 16963.0
+Luxembourg 16964.0 20252.0
+Luxembourg 20253.0 25082.0
+Luxembourg 25083.0 25344.0
+Luxembourg 25345.0 32176.0
+Luxembourg 32177.0 33596.0
+Luxembourg 33597.0 40274.0
+Luxembourg 40275.0 42949.0
+Luxembourg 42950.0 43870.0
+Luxembourg 43871.0 47565.0
+Luxembourg 47566.0 58696.0
+Luxembourg 58697.0 62163.0
+Luxembourg 62164.0 74155.0
+Luxembourg 74156.0 89864.0
+Luxembourg 89865.0 106677.0
+Luxembourg 106678.0 114384.0
+Luxembourg 114385.0 115999.0
+Luxembourg 116000.0 124427.0
+Luxembourg 124428.0 130089.0
+Malaysia 0 909.0
+Malaysia 910.0 1513.0
+Malaysia 1514.0 1715.0
+Malaysia 1716.0 2158.0
+Malaysia 2159.0 2944.0
+Malaysia 2945.0 3245.0
+Malaysia 3246.0 3951.0
+Malaysia 3952.0 4012.0
+Malaysia 4013.0 4960.0
+Malaysia 4961.0 5311.0
+Malaysia 5312.0 5987.0
+Malaysia 5988.0 6929.0
+Malaysia 6930.0 8076.0
+Malaysia 8077.0 9736.0
+Malaysia 9737.0 9848.0
+Mexico 0 2465.0
+Mexico 2466.0 3247.0
+Mexico 3248.0 4384.0
+Mexico 4385.0 6080.0
+Mexico 6081.0 6820.0
+Mexico 6821.0 9295.0
+Mexico 9296.0 9747.0
+Mexico 9748.0 12418.0
+Mexico 12419.0 12492.0
+Mexico 12493.0 15568.0
+Mexico 15569.0 15957.0
+Mexico 15958.0 18512.0
+Mexico 18513.0 18566.0
+Mexico 18567.0 20156.0
+Mexico 20157.0 20699.0
+Mexico 20700.0 20751.0
+Mexico 20752.0 21949.0
+Mexico 21950.0 22051.0
+Mexico 22052.0 22122.0
+Mexico 22123.0 22793.0
+Middle East 0 224.0
+Middle East 225.0 939.0
+Middle East 940.0 2723.0
+Middle East 2724.0 3760.0
+Middle East 3761.0 4136.0
+Middle East 4137.0 6574.0
+Middle East 6575.0 7123.0
+Middle East 7124.0 8759.0
+Middle East 8760.0 9185.0
+Middle East 9186.0 9786.0
+Middle East 9787.0 13599.0
+Middle East 13600.0 19014.0
+Middle East 19015.0 20260.0
+Middle East 20261.0 21874.0
+Middle East 21875.0 25112.0
+Middle East 25113.0 26261.0
+Middle East 26262.0 29170.0
+Middle East 29171.0 30316.0
+Middle East 30317.0 31616.0
+Middle East 31617.0 35438.0
+Middle East 35439.0 36082.0
+Netherlands 0 333.0
+Netherlands 334.0 10780.0
+Netherlands 10781.0 13286.0
+Netherlands 13287.0 16207.0
+Netherlands 16208.0 16322.0
+Netherlands 16323.0 16585.0
+Netherlands 16586.0 30875.0
+Netherlands 30876.0 34847.0
+Netherlands 34848.0 40542.0
+Netherlands 40543.0 43500.0
+Netherlands 43501.0 50125.0
+Netherlands 50126.0 62070.0
+Netherlands 62071.0 73439.0
+Netherlands 73440.0 76603.0
+Netherlands 76604.0 81494.0
+Netherlands 81495.0 82565.0
+Netherlands 82566.0 84453.0
+Netherlands 84454.0 88923.0
+Netherlands 88924.0 107161.0
+Netherlands 107162.0 120139.0
+Netherlands 120140.0 122602.0
+Netherlands 122603.0 124578.0
+New Zealand 0 51.0
+New Zealand 52.0 161.0
+New Zealand 162.0 1090.0
+New Zealand 1091.0 1612.0
+New Zealand 1613.0 2204.0
+New Zealand 2205.0 2400.0
+New Zealand 2401.0 3059.0
+New Zealand 3060.0 3698.0
+New Zealand 3699.0 3786.0
+New Zealand 3787.0 4162.0
+New Zealand 4163.0 4191.0
+Nigeria 0 540.0
+Nigeria 541.0 1000.0
+Nigeria 1001.0 2102.0
+Nigeria 2103.0 2412.0
+Nigeria 2413.0 2799.0
+Nigeria 2800.0 3459.0
+Nigeria 3460.0 7708.0
+Nigeria 7709.0 8788.0
+Nigeria 8789.0 9336.0
+Nigeria 9337.0 9507.0
+Nigeria 9508.0 9711.0
+Norway 0 349.0
+Norway 350.0 1402.0
+Norway 1403.0 2119.0
+Norway 2120.0 2747.0
+Norway 2748.0 4201.0
+Norway 4202.0 5369.0
+Norway 5370.0 7898.0
+Norway 7899.0 9747.0
+Norway 9748.0 10225.0
+Norway 10226.0 11693.0
+Norway 11694.0 13058.0
+OPEC 0 2297.0
+OPEC 2298.0 3158.0
+OPEC 3159.0 3419.0
+OPEC 3420.0 4027.0
+OPEC 4028.0 6376.0
+OPEC 6377.0 7860.0
+OPEC 7861.0 12476.0
+OPEC 12477.0 13488.0
+OPEC 13489.0 17080.0
+OPEC 17081.0 19671.0
+OPEC 19672.0 24016.0
+OPEC 24017.0 27114.0
+OPEC 27115.0 32268.0
+OPEC 32269.0 34882.0
+OPEC 34883.0 36660.0
+OPEC 36661.0 39820.0
+OPEC 39821.0 42405.0
+OPEC 42406.0 44667.0
+OPEC 44668.0 45258.0
+OPEC 45259.0 46889.0
+Other Western Hemisphere 0 2865.0
+Other Western Hemisphere 2866.0 5073.0
+Other Western Hemisphere 5074.0 5681.0
+Other Western Hemisphere 5682.0 15234.0
+Other Western Hemisphere 15235.0 16595.0
+Other Western Hemisphere 16596.0 17606.0
+Other Western Hemisphere 17607.0 20749.0
+Other Western Hemisphere 20750.0 30671.0
+Other Western Hemisphere 30672.0 32994.0
+Other Western Hemisphere 32995.0 55351.0
+Other Western Hemisphere 55352.0 64393.0
+Other Western Hemisphere 64394.0 68081.0
+Other Western Hemisphere 68082.0 75340.0
+Other Western Hemisphere 75341.0 83479.0
+Other Western Hemisphere 83480.0 85996.0
+Other Western Hemisphere 85997.0 93573.0
+Other Western Hemisphere 93574.0 102532.0
+Other Western Hemisphere 102533.0 106058.0
+Other Western Hemisphere 106059.0 136956.0
+Other Western Hemisphere 136957.0 137761.0
+Other Western Hemisphere 137762.0 154666.0
+Other-Africa 0 483.0
+Other-Africa 484.0 1691.0
+Other-Africa 1692.0 3841.0
+Other-Africa 3842.0 4840.0
+Other-Africa 4841.0 6265.0
+Other-Africa 6266.0 8422.0
+Other-Africa 8423.0 8445.0
+Other-Africa 8446.0 9414.0
+Other-Africa 9415.0 10155.0
+Other-Africa 10156.0 11977.0
+Other-Africa 11978.0 12718.0
+Other-Africa 12719.0 18973.0
+Other-Africa 18974.0 20973.0
+Other-Asia and Pacific 0 333.0
+Other-Asia and Pacific 334.0 360.0
+Other-Asia and Pacific 361.0 479.0
+Other-Asia and Pacific 480.0 1111.0
+Other-Asia and Pacific 1112.0 2607.0
+Other-Asia and Pacific 2608.0 3295.0
+Other-Asia and Pacific 3296.0 3483.0
+Other-Asia and Pacific 3484.0 4422.0
+Other-Asia and Pacific 4423.0 4646.0
+Other-Asia and Pacific 4647.0 4795.0
+Other-Asia and Pacific 4796.0 4990.0
+Other-Asia and Pacific 4991.0 5064.0
+Other-Asia and Pacific 5065.0 5167.0
+Other-Central America 0 126.0
+Other-Central America 127.0 280.0
+Other-Central America 281.0 358.0
+Other-Central America 359.0 377.0
+Other-Central America 378.0 653.0
+Other-Central America 654.0 934.0
+Other-Europe 0 885.0
+Other-Europe 886.0 918.0
+Other-Europe 919.0 2842.0
+Other-Europe 2843.0 5533.0
+Other-Europe 5534.0 5621.0
+Other-Europe 5622.0 6277.0
+Other-Europe 6278.0 7911.0
+Other-Europe 7912.0 8266.0
+Other-Europe 8267.0 8786.0
+Other-Europe 8787.0 8867.0
+Other-Europe 8868.0 10304.0
+Other-Europe 10305.0 15182.0
+Other-Europe 15183.0 17296.0
+Other-Europe 17297.0 19486.0
+Other-Europe 19487.0 19971.0
+Other-Europe 19972.0 26598.0
+Other-Europe 26599.0 27249.0
+Other-Middle East 0 384.0
+Other-Middle East 385.0 1445.0
+Other-Middle East 1446.0 5583.0
+Other-Middle East 5584.0 5835.0
+Other-Middle East 5836.0 7218.0
+Other-Middle East 7219.0 7908.0
+Other-Middle East 7909.0 8799.0
+Other-Middle East 8800.0 10393.0
+Other-Other Western Hemisphere 0 920.0
+Other-Other Western Hemisphere 921.0 1487.0
+Other-Other Western Hemisphere 1488.0 2712.0
+Other-Other Western Hemisphere 2713.0 3715.0
+Other-Other Western Hemisphere 3716.0 4036.0
+Other-Other Western Hemisphere 4037.0 4375.0
+Other-Other Western Hemisphere 4376.0 9305.0
+Other-Other Western Hemisphere 9306.0 9919.0
+Other-South America 0 142.0
+Other-South America 143.0 167.0
+Other-South America 168.0 251.0
+Other-South America 252.0 258.0
+Other-South America 259.0 275.0
+Other-South America 276.0 344.0
+Other-South America 345.0 509.0
+Other-South America 510.0 595.0
+Other-South America 596.0 664.0
+Other-South America 665.0 683.0
+Other-South America 684.0 815.0
+Other-South America 816.0 1004.0
+Other-South America 1005.0 1064.0
+Other-South America 1065.0 2593.0
+Panama 0 385.0
+Panama 386.0 756.0
+Panama 757.0 1093.0
+Panama 1094.0 1244.0
+Panama 1245.0 1310.0
+Panama 1311.0 1394.0
+Panama 1395.0 1690.0
+Panama 1691.0 1997.0
+Panama 1998.0 2010.0
+Panama 2011.0 2095.0
+Peru 0 322.0
+Peru 323.0 766.0
+Peru 767.0 904.0
+Peru 905.0 1054.0
+Peru 1055.0 1129.0
+Peru 1130.0 1213.0
+Peru 1214.0 1225.0
+Peru 1226.0 1369.0
+Peru 1370.0 1557.0
+Peru 1558.0 1859.0
+Peru 1860.0 2990.0
+Peru 2991.0 3146.0
+Peru 3147.0 3815.0
+Philippines 0 484.0
+Philippines 485.0 777.0
+Philippines 778.0 1689.0
+Philippines 1690.0 1708.0
+Philippines 1709.0 1753.0
+Philippines 1754.0 2052.0
+Philippines 2053.0 2203.0
+Philippines 2204.0 2236.0
+Philippines 2237.0 2777.0
+Philippines 2778.0 2847.0
+Philippines 2848.0 3065.0
+Philippines 3066.0 3202.0
+Philippines 3203.0 3361.0
+Poland 0 297.0
+Poland 298.0 524.0
+Poland 525.0 546.0
+Poland 547.0 603.0
+Poland 604.0 732.0
+Poland 733.0 896.0
+Poland 897.0 1002.0
+Poland 1003.0 1242.0
+Poland 1243.0 1555.0
+Poland 1556.0 1623.0
+Poland 1624.0 1725.0
+Poland 1726.0 1969.0
+Poland 1970.0 2093.0
+Poland 2094.0 2199.0
+Poland 2200.0 2286.0
+Poland 2287.0 2434.0
+Portugal 0 590.0
+Portugal 591.0 1007.0
+Portugal 1008.0 1028.0
+Portugal 1029.0 1370.0
+Portugal 1371.0 1550.0
+Portugal 1551.0 1645.0
+Portugal 1646.0 1759.0
+Portugal 1760.0 1844.0
+Portugal 1845.0 2040.0
+Portugal 2041.0 2129.0
+Portugal 2130.0 2291.0
+Portugal 2292.0 2378.0
+Russia 0 289.0
+Russia 290.0 440.0
+Russia 441.0 671.0
+Russia 672.0 1559.0
+Russia 1560.0 2017.0
+Russia 2018.0 2408.0
+Russia 2409.0 3466.0
+Russia 3467.0 4176.0
+Russia 4177.0 4253.0
+Russia 4254.0 4985.0
+Russia 4986.0 5083.0
+Russia 5084.0 5724.0
+Russia 5725.0 6298.0
+Saudi Arabia 0 175.0
+Saudi Arabia 176.0 306.0
+Saudi Arabia 307.0 1709.0
+Saudi Arabia 1710.0 2194.0
+Saudi Arabia 2195.0 2749.0
+Saudi Arabia 2750.0 3051.0
+Saudi Arabia 3052.0 3072.0
+Saudi Arabia 3073.0 3226.0
+Saudi Arabia 3227.0 3434.0
+Saudi Arabia 3435.0 3661.0
+Saudi Arabia 3662.0 3765.0
+Singapore 0 1946.0
+Singapore 1947.0 2826.0
+Singapore 2827.0 3289.0
+Singapore 3290.0 5663.0
+Singapore 5664.0 8309.0
+Singapore 8310.0 9578.0
+Singapore 9579.0 16125.0
+Singapore 16126.0 18553.0
+Singapore 18554.0 18916.0
+Singapore 18917.0 19687.0
+Singapore 19688.0 22760.0
+Singapore 22761.0 23181.0
+Singapore 23182.0 24690.0
+Singapore 24691.0 24700.0
+Singapore 24701.0 27262.0
+Singapore 27263.0 28878.0
+Singapore 28879.0 29970.0
+Singapore 29971.0 30642.0
+Singapore 30643.0 68563.0
+Singapore 68564.0 72270.0
+Singapore 72271.0 74445.0
+South Africa 0 785.0
+South Africa 786.0 954.0
+South Africa 955.0 1055.0
+South Africa 1056.0 1203.0
+South Africa 1204.0 1509.0
+South Africa 1510.0 1943.0
+South Africa 1944.0 1971.0
+South Africa 1972.0 2041.0
+South Africa 2042.0 2310.0
+South Africa 2311.0 2332.0
+South Africa 2333.0 2487.0
+South Africa 2488.0 2693.0
+South America 0 3093.0
+South America 3094.0 3752.0
+South America 3753.0 4430.0
+South America 4431.0 6516.0
+South America 6517.0 7536.0
+South America 7537.0 9049.0
+South America 9050.0 9498.0
+South America 9499.0 11108.0
+South America 11109.0 13734.0
+South America 13735.0 14932.0
+South America 14933.0 15537.0
+South America 15538.0 18925.0
+South America 18926.0 22682.0
+South America 22683.0 25367.0
+South America 25368.0 25839.0
+South America 25840.0 29393.0
+South America 29394.0 29678.0
+South America 29679.0 30418.0
+South America 30419.0 33367.0
+South America 33368.0 40417.0
+South America 40418.0 41039.0
+South America 41040.0 43991.0
+South Korea 0 700.0
+South Korea 701.0 1355.0
+South Korea 1356.0 1579.0
+South Korea 1580.0 1712.0
+South Korea 1713.0 2343.0
+South Korea 2344.0 2567.0
+South Korea 2568.0 3101.0
+South Korea 3102.0 4117.0
+South Korea 4118.0 4890.0
+South Korea 4891.0 5256.0
+South Korea 5257.0 5736.0
+South Korea 5737.0 6408.0
+South Korea 6409.0 7297.0
+South Korea 7298.0 7914.0
+South Korea 7915.0 7987.0
+South Korea 7988.0 8685.0
+South Korea 8686.0 9490.0
+South Korea 9491.0 10506.0
+South Korea 10507.0 13630.0
+South Korea 13631.0 13944.0
+Spain 0 209.0
+Spain 210.0 1057.0
+Spain 1058.0 1763.0
+Spain 1764.0 1855.0
+Spain 1856.0 2093.0
+Spain 2094.0 2476.0
+Spain 2477.0 2563.0
+Spain 2564.0 4985.0
+Spain 4986.0 5333.0
+Spain 5334.0 5755.0
+Spain 5756.0 6474.0
+Spain 6475.0 7002.0
+Spain 7003.0 7030.0
+Spain 7031.0 7148.0
+Spain 7149.0 7176.0
+Spain 7177.0 7472.0
+Spain 7473.0 7636.0
+Spain 7637.0 8798.0
+Spain 8799.0 10204.0
+Spain 10205.0 11773.0
+Sweden 0 3476.0
+Sweden 3477.0 15434.0
+Sweden 15435.0 24137.0
+Sweden 24138.0 25625.0
+Sweden 25626.0 26423.0
+Sweden 26424.0 29134.0
+Sweden 29135.0 30266.0
+Sweden 30267.0 32124.0
+Sweden 32125.0 39830.0
+Sweden 39831.0 41200.0
+Sweden 41201.0 47778.0
+Sweden 47779.0 48294.0
+Sweden 48295.0 49937.0
+Sweden 49938.0 50698.0
+Sweden 50699.0 51379.0
+Switzerland 0 5997.0
+Switzerland 5998.0 6457.0
+Switzerland 6458.0 6489.0
+Switzerland 6490.0 7553.0
+Switzerland 7554.0 7876.0
+Switzerland 7877.0 10027.0
+Switzerland 10028.0 10179.0
+Switzerland 10180.0 11952.0
+Switzerland 11953.0 16172.0
+Switzerland 16173.0 17361.0
+Switzerland 17362.0 22334.0
+Switzerland 22335.0 26255.0
+Switzerland 26256.0 32208.0
+Switzerland 32209.0 37441.0
+Switzerland 37442.0 42297.0
+Switzerland 42298.0 47072.0
+Switzerland 47073.0 68115.0
+Switzerland 68116.0 70175.0
+Switzerland 70176.0 85284.0
+Switzerland 85285.0 86873.0
+Taiwan 0 115.0
+Taiwan 116.0 191.0
+Taiwan 192.0 239.0
+Taiwan 240.0 421.0
+Taiwan 422.0 496.0
+Taiwan 497.0 639.0
+Taiwan 640.0 708.0
+Taiwan 709.0 875.0
+Taiwan 876.0 881.0
+Taiwan 882.0 1594.0
+Taiwan 1595.0 2019.0
+Taiwan 2020.0 2200.0
+Taiwan 2201.0 2806.0
+Taiwan 2807.0 3091.0
+Taiwan 3092.0 3769.0
+Taiwan 3770.0 4087.0
+Thailand 0 413.0
+Thailand 414.0 777.0
+Thailand 778.0 1818.0
+Thailand 1819.0 2844.0
+Thailand 2845.0 3903.0
+Thailand 3904.0 4119.0
+Thailand 4120.0 4130.0
+Thailand 4131.0 4613.0
+Thailand 4614.0 4933.0
+Thailand 4934.0 5416.0
+Thailand 5417.0 5856.0
+Thailand 5857.0 6594.0
+Thailand 6595.0 6902.0
+Thailand 6903.0 7519.0
+Thailand 7520.0 7979.0
+Turkey 0 136.0
+Turkey 137.0 163.0
+Turkey 164.0 208.0
+Turkey 209.0 442.0
+Turkey 443.0 477.0
+Turkey 478.0 632.0
+Turkey 633.0 706.0
+Turkey 707.0 863.0
+Turkey 864.0 866.0
+United Arab Emirates 0 110.0
+United Arab Emirates 111.0 174.0
+United Arab Emirates 175.0 637.0
+United Arab Emirates 638.0 717.0
+United Arab Emirates 718.0 1137.0
+United Arab Emirates 1138.0 1141.0
+United Arab Emirates 1142.0 1982.0
+United Arab Emirates 1983.0 2553.0
+United Arab Emirates 2554.0 6750.0
+United Arab Emirates 6751.0 8896.0
+United Kingdom 0 18139.0
+United Kingdom 18140.0 25788.0
+United Kingdom 25789.0 28713.0
+United Kingdom 28714.0 30696.0
+United Kingdom 30697.0 35657.0
+United Kingdom 35658.0 40527.0
+United Kingdom 40528.0 53599.0
+United Kingdom 53600.0 60999.0
+United Kingdom 61000.0 76235.0
+United Kingdom 76236.0 88781.0
+United Kingdom 88782.0 89787.0
+United Kingdom 89788.0 92641.0
+United Kingdom 92642.0 93382.0
+United Kingdom 93383.0 102521.0
+United Kingdom 102522.0 106711.0
+United Kingdom 106712.0 106982.0
+United Kingdom 106983.0 117474.0
+United Kingdom 117475.0 124394.0
+United Kingdom 124395.0 138998.0
+United Kingdom 138999.0 154892.0
+United Kingdom 154893.0 161842.0
+United Kingdom 161843.0 180159.0
+United Kingdom Islands, Caribbean 0 3160.0
+United Kingdom Islands, Caribbean 3161.0 3477.0
+United Kingdom Islands, Caribbean 3478.0 5174.0
+United Kingdom Islands, Caribbean 5175.0 8826.0
+United Kingdom Islands, Caribbean 8827.0 9654.0
+United Kingdom Islands, Caribbean 9655.0 9998.0
+United Kingdom Islands, Caribbean 9999.0 11744.0
+United Kingdom Islands, Caribbean 11745.0 15368.0
+United Kingdom Islands, Caribbean 15369.0 22507.0
+United Kingdom Islands, Caribbean 22508.0 26478.0
+United Kingdom Islands, Caribbean 26479.0 26614.0
+United Kingdom Islands, Caribbean 26615.0 28906.0
+United Kingdom Islands, Caribbean 28907.0 29121.0
+United Kingdom Islands, Caribbean 29122.0 32011.0
+United Kingdom Islands, Caribbean 32012.0 38844.0
+United Kingdom Islands, Caribbean 38845.0 54382.0
+United Kingdom Islands, Caribbean 54383.0 54836.0
+United Kingdom Islands, Caribbean 54837.0 60221.0
+United Kingdom Islands, Caribbean 60222.0 60960.0
+United Kingdom Islands, Caribbean 60961.0 68011.0
+United Kingdom Islands, Caribbean 68012.0 68496.0
+Venezuela 0 347.0
+Venezuela 348.0 1611.0
+Venezuela 1612.0 2344.0
+Venezuela 2345.0 2518.0
+Venezuela 2519.0 3057.0
+Venezuela 3058.0 3172.0
+Venezuela 3173.0 3322.0
+Venezuela 3323.0 3996.0
+Venezuela 3997.0 4295.0
+Venezuela 4296.0 4678.0
+Venezuela 4679.0 5400.0
+Venezuela 5401.0 5408.0
+Venezuela 5409.0 6239.0
+Venezuela 6240.0 6866.0
+Venezuela 6867.0 7318.0
