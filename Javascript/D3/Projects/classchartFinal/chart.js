@@ -6,12 +6,13 @@ class Chart{
   }
 
   draw(){
-    this.width = this.element.offsetWidth;
+    // this.width = this.element.offsetWidth;
+    this.width = 900;
     this.height = this.width/2.2;
     this.padding = 50;
     this.margin = {
       top : 20,
-      bottom : 20,
+      bottom : 25,
       left : 60,
       right : 140
     };
@@ -78,7 +79,7 @@ class Chart{
 
     this.plot.append("g")
              .attr("class", "y axis")
-             .call(yAxis.ticks(4))
+             .call(yAxis.ticks(6))
 
     this.plot.append("g")
              .append("text")
@@ -93,6 +94,19 @@ class Chart{
              .style('text-transform', 'uppercase')
              .text("$USD");
 
+     this.plot.append("g")
+              .append("text")
+              // .attr("transform", "rotate(90)")
+              .attr("x", this.width-103)
+              .attr("dy", ".71em")
+              .style("text-anchor", "end")
+              .style("fill", "indigo")
+              .style('font-family', 'Helvetica')
+              .style('font-size', '11px')
+              .style('letter-spacing', '1px')
+              .style('text-transform', 'uppercase')
+              .text("TSLA");
+
   }
 
   addLine(){
@@ -105,25 +119,25 @@ class Chart{
              .data(this.keymap)
              .join('path')
              .classed('stockLines', function(d){
-                  if (d.name.match(/([_])/g)) {
+                  if (!d.name.match(/([t])/g)) {
                     return true
                   } else {
                     return false
                   }})
              .attr('d', function (d) { return line(d.values) })
              .style('stroke', function(d){
-                  if (!d.name.match(/([_])/g)) {
-                    return 'green'
+                  if (d.name.match(/([t])/g)) {
+                    return 'indigo'
                   } else {
-                    return 'rgba(0,0,0,0.4)'
+                    return 'orange'
                   }})
              .style("stroke-dasharray", function(d){
-               if (!d.name.match(/([_])/g)) {
-                 return 'none'
-               } else {
+               if (d.name.match(/[m]/g)){
                  return "3, 3"
              }})
              .style('fill', 'none');
+
+
 
   }
 
@@ -139,32 +153,24 @@ class Chart{
 
     let lines = document.getElementsByClassName('stockLines');
 
-    let mousePerLine = mouseG.selectAll('.mouse-per-line')
-      .data(this.keymap.slice(1))
+    let mousePerLine = mouseG.selectAll('.mouse-line')
+      .data(this.keymap)
       .enter()
       .append("g")
       .attr("class", "mouse-per-line");
 
     mousePerLine.append("circle")
       .attr("r", 7)
-      .style("stroke", "black"
-      // function(d) {
-      //   return this.color;
-      // }
-    )
-      .style("fill", "rgba(0,0,0,0.5)"
-      // function(d) {
-      //   return this.color;
-      // }
-    )
+      .style("stroke", "orange")
+      .style("fill", "orange")
       .style("fill-opacity", "0.3")
       .style("stroke-width", "1px")
       .style("opacity", "0");
 
-    mousePerLine.join("text")
-      // .attr("transform", "translate(-50, -30)")
-      // .style("text-shadow",
-      // " -2px -2px 0 #FFF, 0   -2px 0 #FFF, 2px -2px 0 #FFF, 2px  0   0 #FFF, 2px  2px 0 #FFF, 0    2px 0 #FFF,-2px  2px 0 #FFF,-2px  0   0 #FFF");
+    mousePerLine.append("text")
+      .attr("transform", "translate(-60, -20)")
+      .style("text-shadow",
+      " -2px -2px 0 #FFF, 0   -2px 0 #FFF, 2px -2px 0 #FFF, 2px  0   0 #FFF, 2px  2px 0 #FFF, 0    2px 0 #FFF,-2px  2px 0 #FFF,-2px  0   0 #FFF");
 
     mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
       .attr('width', this.width-145) // can't catch mouse events on a g element
@@ -200,30 +206,27 @@ class Chart{
         d3.selectAll(".mouse-per-line")
           .attr("transform", (d, i) => {
             let xDate = this.xScale.invert(mouse[0]),
-                bisect = d3.bisector(d => d.date).right,
-                idx = bisect(d.values, xDate);
+              bisect = d3.bisector(d => d.date).right,
+              idx = bisect(d.values, xDate);
 
             let beginning = 0,
-                end = lines[i].getTotalLength(),
-                target = null;
+              end = lines[i].getTotalLength(),
+              target = null;
             while (true){
-                  target = Math.floor((beginning + end) / 2);
-                var  pos = lines[i].getPointAtLength(target);
-              if ((target === end || target === beginning) && pos.x !== mouse[0]) {
-                  break;
-              }
-              if (pos.x > mouse[0]){
-                end = target;
-              }
-              else if (pos.x < mouse[0]){
-                beginning = target;
-              }
-              else break; //position found
-            }
-            d3.select("mouse-per-line").select("text")
+              target = Math.floor((beginning + end) / 2);
+              var  pos = lines[i].getPointAtLength(target);
+              if ((target === end || target === beginning) && pos.x !== mouse[0]) {break;}
+              if (pos.x > mouse[0]){ end = target;}
+              else if (pos.x < mouse[0]){beginning = target;}
+              else break; }
+            d3.selectAll(".mouse-per-line").select("text")
               // .text(function(){ const formatTime = d3.timeFormat("%b %d");
               //   return formatTime(xScale.invert(pos.x)) + " $" + yScale.invert(pos.y).toFixed(1)});
-              .text( () => { "$" + this.yScale.invert(pos.y).toFixed(2)})
+              .text( function(d) {
+                return "$" + d.values[idx].key.toFixed(2);
+                // return "$"+this.yScale.invert(pos.y).toFixed(2) + d.name
+              })
+
             return "translate(" + mouse[0] + "," + pos.y +")";
           })
           .style('font-family', 'Helvetica')
@@ -249,20 +252,30 @@ class Chart{
                                                       + ")")
                  .attr("x", 7)
                  .attr("dy", ".3em")
-                 .style("fill", "green")
+                 .style("fill", "orange")
                  .style('font-family', 'Helvetica')
                  .style('font-size', '11px')
                  .style('letter-spacing', '1px')
                  .style('text-transform', 'uppercase')
                  .text(function(d){
-                        if (!d.name.match(/([_])/g)){
-                          return d.name}
-                        });
-
-    let col = this.plot.selectAll('.special')
-                       .style('stroke',this.color || 'red')
-                       .style('stroke-dasharray', ("3,3"))
-                       .lower();
+                   if(d.name.match(/[_]/g)){
+                     return d.name;
+                   } else if (d.name.match(/[m]/g)){
+                     return d.name;
+                   }
+                        // if (d.name.match(/(band)\W+/g)){
+                        //   console.log('true')
+                        //   return d.name;
+                        // }
+                        // if (d.name.match(/(tsla)\W+/g)){
+                        //   return d.name;
+                        // }
+                      });
+    //
+    // let col = this.plot.selectAll('.special')
+    //                    .style('stroke',this.color || 'red')
+    //                    .style('stroke-dasharray', ("3,3"))
+    //                    .lower();
 
   }
 

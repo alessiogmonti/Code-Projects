@@ -9,24 +9,32 @@ let getD1 = d3.csv('d1.csv', function(d){
                           if (e>0) {return e} else {return c}
                         }
                         return { date: d3.timeParse("%Y-%m-%d")(d.Date),
+                                tsla: d.TSLA,
+                                sma: removeNaN(+d.SMA_TSLA, d.TSLA)
                                  // aapl : d.AAPL,
-                                 tsla : d.TSLA,
+                                 // price : {tsla: d.TSLA},
                                  // aapl_sma: removeNaN(+d.SMA_AAPL,d.AAPL),
-                                 tsla_sma: removeNaN(+d.SMA_TSLA,d.TSLA)
-                        }
-                      });
+                                 // indicator: { sma: removeNaN(+d.SMA_TSLA,d.TSLA)}
+                                 ///include secondary key value
+                               }
+                             });
 
 let getD2 = d3.csv('d2.csv', function(d){
                         function removeNaN(e,c){
                           if (e>0) {return e} else {return c}
                         }
                         return { date: d3.timeParse("%Y-%m-%d")(d.Date),
-                                 tsla : d.TSLA,
-                                 tsla_sma: removeNaN(+d.SMA_TSLA, d.TSLA),
-                                 u_band: removeNaN(+d.UpperBand, d.TSLA),
-                                 l_band: removeNaN(+d.LowerBand, d.TSLA)
-                        }
-                      });
+                                tsla: d.TSLA,
+                                sma: removeNaN(+d.SMA_TSLA, d.TSLA),
+                                u_band: removeNaN(+d.UpperBand, d.TSLA),
+                                l_band: removeNaN(+d.LowerBand, d.TSLA)
+                                 // price: {tsla : d.TSLA},
+                                 // indicator: {
+                                 // sma: removeNaN(+d.SMA_TSLA, d.TSLA),
+                                 // u_band: removeNaN(+d.UpperBand, d.TSLA),
+                                 // l_band: removeNaN(+d.LowerBand, d.TSLA) }
+                               }
+                             });
 
 let data2get = [getD1, getD2];
 
@@ -54,7 +62,7 @@ let gs = d3.graphScroll()
 //         [new Date(2016,4,1), 40]
 //     ]
 // });
-//
+
 // var gs2 = d3.graphScroll()
 //     .container(d3.select('#container2'))
 //     .graph(d3.selectAll('.container2 #graph'))
@@ -62,8 +70,7 @@ let gs = d3.graphScroll()
 //     .sections(d3.selectAll('.container2 #sections > div'))
 //     // .offset(innerWidth < 900 ? innerHeight - 30 : 200)
 //     .on('active', function(i){
-//       chart2.setData(datasets[i])
-//       chart2.setColor(colors2[i]);
+//       chart2.draw();
 //     });
 
 // implement throttle for window resize
