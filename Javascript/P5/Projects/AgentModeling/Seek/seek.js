@@ -1,117 +1,118 @@
 class Seeker {
-  constructor(x, y) {
+  constructor(x, y, id) {
     this.pos = createVector(x, y);
-    this.vel = createVector(0, 0);
+    this.vel = createVector(1, 1);
     this.acc = createVector(0, 0);
     this.maxSpeed = 4; //change with genetics
-    this.maxForce = 0.2; //change with genetics
-    this.r = 8;
+    this.maxForce = 0.1; //change with genetics
+    this.r = 5;
     this.xoff = 0;
     this.sight = 300;
+    this.id = id;
+    this.fill = color(222,222,222,255);
+    this.stroke = color(22,22,22,255);
+    this.target;
 
-    this.targets = [];
+    this.timer = new Timer(5000);
   }
 
   run(pack, prey){
     this.separate(pack);
-    this.updateTargets(prey);
-    this.find();
+    this.find(prey);
     this.edges();
     this.update();
     this.show();
   }
 
   separate(others){
-    let sep = 25.0;
+    let sep = 50/this.r;
     let steer = createVector(0, 0);
     let count = 0;
-    // For every boid in the system, check if it's too close
     for (let i = 0; i < others.length; i++) {
       let d = p5.Vector.dist(this.pos,others[i].pos);
-      // If the distance is greater than 0 and less than an arbitrary amount (0 when you are yourself)
       if ((d > 0) && (d < sep)) {
-        // Calculate vector pointing away from neighbor
         let diff = p5.Vector.sub(this.pos, others[i].pos);
         diff.normalize();
-        diff.div(d);        // Weight by distance
+        diff.div(d);
         steer.add(diff);
-        count++;            // Keep track of how many
+        count++;
+        this.stroke = color(150,120,200);
+        this.fill = color(150,120,200);
       }
     }
-    // Average -- divide by how many
     if (count > 0) {
       steer.div(count);
     }
 
-    // As long as the vector is greater than 0
     if (steer.mag() > 0) {
-      // Implement Reynolds: Steering = Desired - Velocity
       steer.normalize();
-      steer.mult(this.maxspeed);
-      steer.sub(this.velocity);
-      steer.limit(this.maxforce);
+      steer.mult(this.maxSpeed);
+      steer.sub(this.vel);
+      steer.limit(this.maxForce+1);
     }
     this.applyForce(steer);
   }
 
-  updateTargets(prey){
-    this.targets = prey;
-    //each pack member retains a list of targets in memory
-  }
+  find(prey){
+    if (this.target && dist(this.pos.x,this.pos.y, this.target.pos.x,this.target.pos.y) < this.sight && this.target.hp > 0){
+      this.pursue();
+    } else {
+      let angle = noise(this.xoff) * TWO_PI * 1.5;
+      let steer = p5.Vector.fromAngle(angle);
 
-  find(){
-    for (let i = 0; i < this.targets.length; i++) {
-      let d = dist( this.pos.x,this.pos.y, this.targets[i].pos.x,this.targets[i].pos.y )
-      if (d < this.sight + this.targets[i].r) {
-        push();
-        stroke(255,100,20);
-        noFill();
-        pop();
+      steer.setMag(this.maxForce);
+      this.applyForce(steer);
+      this.xoff += 0.0001;
 
-        circle(this.pos.x, this.pos.y, this.sight);
-        this.pursue(this.targets[i])
-      } else {
-        let angle = noise(this.xoff) * TWO_PI * 2;
-        let steer = p5.Vector.fromAngle(angle);
-        steer.setMag(0.01);
-        this.applyForce(steer);
-        this.xoff += 0.001;
+      for (let i = 0; i < prey.length; i++) {
+        let d = dist( this.pos.x,this.pos.y, prey[i].pos.x,prey[i].pos.y )
+        if (d < this.sight) {
+          this.target = prey[i];
+        }
       }
     }
   }
 
-  pursue(tget){
-    let target = tget.pos.copy();
-    let pred = tget.vel.copy();
-    let lookahead = 10;
-    let distance = 0.5* p5.Vector.dist(target,this.pos);
-    pred.setMag()
-    pred.mult(20);
+  pursue(){
+    push();
+    stroke(0,0,0,20);
+    line(this.pos.x,this.pos.y,this.target.pos.x,this.target.pos.y) //onsight
+    pop();
+
+    let target = this.target.pos.copy();
+    let pred = this.target.vel.copy();
+    // let distance = 0.9 * p5.Vector.dist(target,this.pos);
+
+    // pred.setMag(distance);
+    pred.mult(1);
     target.add(pred);
-    // fill(99, 203, 100);
-    // noStroke();
-    circle(target.x,target.y,5);
 
-    return this.seek(target);
-  }
+    // circle(target.x,target.y,5);
 
-  // attack(){
-  //
-  // }
-
-  seek(target) {
     let force = p5.Vector.sub(target, this.pos);
-    let stopping = dist(this.pos.x,this.pos.y,target.x,target.y);
-    let slowRad = 50;
-    if (stopping <=slowRad) {
-      let desiredSpeed = map(stopping, 0, slowRad, 0, this.maxSpeed);
-      force.setMag(desiredSpeed)
-    } else {
-      force.setMag(this.maxSpeed);
-    }
     force.sub(this.vel);
     force.limit(this.maxForce);
     this.applyForce(force);
+
+    let stopping = dist(this.pos.x,this.pos.y,target.x,target.y);
+    if (stopping <= this.r) {
+      // let desiredSpeed = 0.1;     //map(stopping, 0, slowRad, 0, this.maxSpeed);
+      // force.setMag(desiredSpeed)
+      this.attack(this.target, force);
+      this.stroke = color(200,0,0);
+      this.fill = color(200,0,0);
+    } else {
+      force.setMag(this.maxForce);
+    }
+  }
+
+  attack(target, force){
+    force.setMag(0.1);
+    target.lifedrain(this.id);
+  }
+
+  frenzy(){
+    this.r += 3;
   }
 
   applyForce(force) {
@@ -127,13 +128,17 @@ class Seeker {
 
   show() {
     push();
-    stroke(22,22,22,255);
+    stroke(this.stroke);
     strokeWeight(0.5);
-    fill(222,222,222,255);
+    fill(this.fill);
     translate(this.pos.x, this.pos.y);
     rotate(this.vel.heading());
+    // circle(0,0,this.r);
     triangle(-this.r, -this.r / 2, -this.r, this.r / 2, this.r, 0);
+    triangle(-this.r, this.r / 2, -this.r, -this.r / 2, this.r, 0);
     pop();
+    this.fill = color(222,222,222,255);
+    this.stroke = color(22,22,22,255);
   }
 
   edges() {
