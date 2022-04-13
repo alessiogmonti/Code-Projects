@@ -6,11 +6,18 @@ html{
   cursor: crosshair;
 }
 
+body{
+  margin: 0;
+}
+
 .title{
   position: fixed;
   padding-left: 40rem;
-  width: 75%;
-  margin-top: 0rem;
+  width: 65%;
+  /* margin-top: 0rem; */
+  margin: auto;
+  background-color: white;
+  z-index: 2;
 }
 
 .title h1{

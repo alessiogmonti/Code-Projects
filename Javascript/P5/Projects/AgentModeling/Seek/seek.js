@@ -3,7 +3,7 @@ class Seeker {
     this.pos = createVector(x, y);
     this.vel = createVector(1, 1);
     this.acc = createVector(0, 0);
-    this.maxSpeed = 4; //change with genetics
+    this.maxSpeed = 3; //change with genetics
     this.maxForce = 0.1; //change with genetics
     this.r = 5;
     this.xoff = 0;
@@ -12,8 +12,9 @@ class Seeker {
     this.fill = color(222,222,222,255);
     this.stroke = color(22,22,22,255);
     this.target;
+    this.pursuit = false;
 
-    this.timer = new Timer(5000);
+    // this.timer = new Timer(5000);
   }
 
   run(pack, prey){
@@ -25,7 +26,7 @@ class Seeker {
   }
 
   separate(others){
-    let sep = 50/this.r;
+    let sep = map(this.r, 5, 20, 20, 5);
     let steer = createVector(0, 0);
     let count = 0;
     for (let i = 0; i < others.length; i++) {
@@ -36,7 +37,6 @@ class Seeker {
         diff.div(d);
         steer.add(diff);
         count++;
-        this.stroke = color(150,120,200);
         this.fill = color(150,120,200);
       }
     }
@@ -53,10 +53,11 @@ class Seeker {
     this.applyForce(steer);
   }
 
-  find(prey){
-    if (this.target && dist(this.pos.x,this.pos.y, this.target.pos.x,this.target.pos.y) < this.sight && this.target.hp > 0){
+  find(prey){ //keep a global list of lowest health targets (pack intelligence)
+    if (this.target && dist(this.pos.x,this.pos.y, this.target.pos.x,this.target.pos.y) < this.sight && this.target.hp > 0 && !this.target.escaped){
       this.pursue();
     } else {
+      this.pursuit = false;
       let angle = noise(this.xoff) * TWO_PI * 1.5;
       let steer = p5.Vector.fromAngle(angle);
 
@@ -81,38 +82,37 @@ class Seeker {
 
     let target = this.target.pos.copy();
     let pred = this.target.vel.copy();
-    // let distance = 0.9 * p5.Vector.dist(target,this.pos);
-
-    // pred.setMag(distance);
-    pred.mult(1);
+    pred.mult(2);
     target.add(pred);
-
-    // circle(target.x,target.y,5);
 
     let force = p5.Vector.sub(target, this.pos);
     force.sub(this.vel);
     force.limit(this.maxForce);
     this.applyForce(force);
 
-    let stopping = dist(this.pos.x,this.pos.y,target.x,target.y);
-    if (stopping <= this.r) {
-      // let desiredSpeed = 0.1;     //map(stopping, 0, slowRad, 0, this.maxSpeed);
-      // force.setMag(desiredSpeed)
-      this.attack(this.target, force);
-      this.stroke = color(200,0,0);
+    this.target.hunted = this;
+
+    let d = dist(this.pos.x,this.pos.y, this.target.pos.x,this.target.pos.y);
+    if (d < 50 && d > this.r+1) {
+      this.fill = color(105,200,200);
+      this.pursuit = true;
+    } else if (d < this.r) {
       this.fill = color(200,0,0);
+      this.pursuit = false;
+      this.attack(this.target, force);
     } else {
       force.setMag(this.maxForce);
+      this.pursuit = false;
     }
   }
 
   attack(target, force){
-    force.setMag(0.1);
     target.lifedrain(this.id);
   }
 
   frenzy(){
     this.r += 3;
+    this.maxForce += 0.05;
   }
 
   applyForce(force) {
@@ -129,11 +129,10 @@ class Seeker {
   show() {
     push();
     stroke(this.stroke);
-    strokeWeight(0.5);
+    strokeWeight(strokeweight);
     fill(this.fill);
     translate(this.pos.x, this.pos.y);
     rotate(this.vel.heading());
-    // circle(0,0,this.r);
     triangle(-this.r, -this.r / 2, -this.r, this.r / 2, this.r, 0);
     triangle(-this.r, this.r / 2, -this.r, -this.r / 2, this.r, 0);
     pop();
@@ -142,15 +141,15 @@ class Seeker {
   }
 
   edges() {
-    if (this.pos.x > width + this.r) {
-      this.pos.x = -this.r;
-    } else if (this.pos.x < -this.r) {
-      this.pos.x = width + this.r;
+    if (this.pos.x > sw + (this.r/1.2)) {
+      this.pos.x = -this.r/1.2;
+    } else if (this.pos.x < -this.r/1.2) {
+      this.pos.x = sw+(this.r/1.2);
     }
-    if (this.pos.y > height + this.r) {
-      this.pos.y = -this.r;
-    } else if (this.pos.y < -this.r) {
-      this.pos.y = height + this.r;
+    if (this.pos.y > sh + (this.r/1.2)) {
+      this.pos.y = -this.r/1.2;
+    } else if (this.pos.y < -this.r/1.2) {
+      this.pos.y = sh+(this.r/1.2);
     }
   }
 }

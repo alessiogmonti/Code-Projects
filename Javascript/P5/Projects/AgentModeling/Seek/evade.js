@@ -3,7 +3,7 @@ class Evader {
     this.pos = createVector(x, y);
     this.vel = createVector(1, 0);
     this.acc = createVector(0, 0);
-    this.maxSpeed = 2;
+    this.maxSpeed = 1;
     this.maxForce = 2;
     this.r = 8;
     this.wanderTheta = PI / 2;
@@ -21,50 +21,94 @@ class Evader {
     this.killer;
     this.vulnerability;
     this.desireability;
+
+    this.signaler = false;
+    this.signaling = false;
+    this.escaped = false;
+    this.escapeP;
+    this.hunted;
   }
 
-  run(pack, prey){
+  run(){
     this.wander();
-    this.evade(pack);
     this.edges();
     this.show();
     this.update();
   }
 
-  evade(pack){
-    for (var i = 0; i < pack.length; i++) {
-      if (dist(this.pos.x,this.pos.y, pack[i].pos.x,pack[i].pos.y) < 30){
-        let target = pack[i].pos.copy();
-        let pred = pack[i].vel.copy();
-        pred.mult(-5);
-        target.add(pred);
-        target.setMag(50);
-        this.maxSpeed = 6;
-        this.applyForce(target);
-      } else {
-        this.maxSpeed = 2;
+  wander(point) {
+    let wanderPoint;
+      if(this.signaling && this.escapeP){
+        this.fill = color(97,175,239);
+        wanderPoint = this.escapeP.copy();
+        wanderPoint.setMag(10);
+        wanderPoint.add(this.pos);
+      } else if (!this.signaling && !this.hunted && this.escapeP) {
+        this.fill = color(0,225,255);
+        wanderPoint = this.escapeP.copy();
+      } else if (!this.signaling && !this.hunted && !this.escapeP) {
+        this.fill = color(100,255,25)
+        wanderPoint = this.vel.copy();
+        wanderPoint.setMag(90);
+        wanderPoint.add(this.pos);
       }
-    }
+
+      if (this.hunted) {
+        this.escapeP = null;
+        if (dist(this.pos.x,this.pos.y, this.hunted.pos.x,this.hunted.pos.y) < 30 + (this.hunted.r)){
+          this.signaling = false;
+          this.fill = color(236,189,248);
+          this.maxSpeed = 3;
+          this.maxForce = 6;
+
+          let target = this.hunted.pos.copy();
+          let pred = this.hunted.vel.copy();
+          let wanderRadius = 150;
+          let displaceRange = random(0.05,0.2);
+
+          pred.mult(-1.5);
+          target.add(pred);
+
+          let theta = this.wanderTheta + this.vel.heading();
+          let x = wanderRadius * sin(theta);
+          let y = wanderRadius * cos(theta);
+
+          target.add(x, y);
+
+          let steer = target.sub(this.pos);
+          steer.setMag(this.maxForce);
+          this.applyForce(steer);
+
+          this.wanderTheta += random(-displaceRange, displaceRange);
+        } else {
+          this.maxSpeed = 1;
+          this.maxForce = 2;
+          this.hunted = null;
+        }
+      } else {
+        let wanderRadius = 3;
+
+        let theta = this.wanderTheta + this.vel.heading();
+        let x = wanderRadius * cos(theta) ;
+        let y = wanderRadius * sin(theta) ;
+        wanderPoint.add(x,y);
+
+        let steer = wanderPoint.sub(this.pos);
+        steer.setMag(this.maxForce);
+        this.applyForce(steer);
+
+        let displaceRange = 0.4;
+        this.wanderTheta += random(-displaceRange, displaceRange);
+      }
   }
 
-  wander() {
-    let wanderPoint = this.vel.copy();
-    wanderPoint.setMag(50);
-    wanderPoint.add(this.pos);
-
-    let wanderRadius = 10;
-
-    let theta = this.wanderTheta + this.vel.heading();
-    let x = wanderRadius * cos(theta) ;
-    let y = wanderRadius * sin(theta) ;
-    wanderPoint.add(x,y);
-
-    let steer = wanderPoint.sub(this.pos);
-    steer.setMag(this.maxForce);
-    this.applyForce(steer);
-
-    let displaceRange = 0.4;
-    this.wanderTheta += random(-displaceRange, displaceRange);
+  signal(seekers){
+    this.signaling = true;
+    for (let i = 0; i < seekers.length; i++) {
+      if (dist(this.pos.x,this.pos.y, seekers[i].pos.x,seekers[i].pos.y) < 200) {
+          seekers[i].escapeP = this.escapeP.copy();
+      }
+    }
   }
 
   lifedrain(attacker){
@@ -90,7 +134,7 @@ class Evader {
 
   show() {
     stroke(this.stroke);
-    strokeWeight(0.5);
+    strokeWeight(strokeweight);
     fill(this.fill);
 
     push();
@@ -120,6 +164,7 @@ class Evader {
     for (let path of this.paths) {
       beginShape();
       noFill();
+      stroke(255);
       for (let v of path) {
         vertex(v.x, v.y);
       }
@@ -128,18 +173,18 @@ class Evader {
   }
 
   edges() {
-    if (this.pos.x > width + this.r) {
-      this.pos.x = -this.r;
+    if (this.pos.x > sw + (this.r/1.2)) {
+      this.pos.x = -this.r/1.2;
       this.hitEdge = true;
-    } else if (this.pos.x < -this.r) {
-      this.pos.x = width + this.r;
+    } else if (this.pos.x < -this.r/1.2) {
+      this.pos.x = sw+(this.r/1.2);
       this.hitEdge = true;
     }
-    if (this.pos.y > height + this.r) {
-      this.pos.y = -this.r;
+    if (this.pos.y > sh + (this.r/1.2)) {
+      this.pos.y = -this.r/1.2;
       this.hitEdge = true;
-    } else if (this.pos.y < -this.r) {
-      this.pos.y = height + this.r;
+    } else if (this.pos.y < -this.r/1.2) {
+      this.pos.y = sh+(this.r/1.2);
       this.hitEdge = true;
     }
 

@@ -1,0 +1,138 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="//unpkg.com/three"></script>
+  <script src="//unpkg.com/three/examples/js/controls/TrackballControls.js"></script>
+  <script src="//unpkg.com/three-globe"></script>
+  <!--<script src="../../dist/three-globe.js"></script>-->
+</head>
+<body>
+  <div id="globeViz"></div>
+
+  <script>
+    // Gen random data
+    const N = 10;
+
+    const arcsData = [...Array(N).keys()].map(() => ({
+      startLat: 45,
+      startLng: 36,
+      endLat: (Math.random() - 0.5) * 180,
+      endLng: (Math.random() - 0.5) * 360,
+      color: ['white', 'grey', 'blue'][Math.round(Math.random() * 3)],
+      stroke: [2* Math.round(Math.random())]
+    }));
+
+    // var createOrbitViewer = require('three-orbit-viewer')(THREE)
+    // var createBackground = require('./')
+
+    // var app = createOrbitViewer({
+    //   clearColor: 'rgb(40, 40, 40)',
+    //   clearAlpha: 1.0,
+    //   fov: 55,
+    //   position: new THREE.Vector3(0, 2, -2)
+    // })
+
+    const scene = new THREE.Scene();
+
+    // add a default background
+    // var background = createBackground()
+    // app.scene.add(background)
+    // scene.add(background)
+
+    const capmaterial = new THREE.MeshPhongMaterial();
+    capmaterial.color = new THREE.Color('rgba(240,240,240,1)')
+    capmaterial.shininess = 50;
+    capmaterial.specular = new THREE.Color('rgba(250,10,50,0.1)')
+
+    const world = new ThreeGlobe()
+    // .globeImageUrl('gen.jpg')
+    .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+    .showGlobe(true)
+    .atmosphereColor('white')
+    .arcsData(arcsData)
+    .arcColor('color')
+    .arcStroke('stroke')
+    .arcCurveResolution(100)
+    .arcCircularResolution(12)
+    .polygonCapMaterial(feat => capmaterial)
+    .polygonSideColor(() => 'rgba(58, 58, 58, 1)');
+    // .arcDashLength(0.4)
+    // .arcDashGap(4)
+    // .arcDashInitialGap(() => Math.random() * 5)
+    // .arcDashAnimateTime(1000);
+
+    const globeMaterial = world.globeMaterial();
+    globeMaterial.bumpScale = 10;
+    // new THREE.TextureLoader().load('gen.jpg', texture => {
+    // globeMaterial.specularMap = texture;
+    // globeMaterial.specular = new THREE.Color('grey');
+    globeMaterial.shininess = 1;
+    globeMaterial.color = new THREE.Color('rgba(100,0,10,1)');
+    // });
+
+    const light = new THREE.PointLight( 0xFFC0E9F6, 0.1, 500 );
+    light.position.set(150,50,150);
+    //
+    const blight = new THREE.PointLight( 0xFFC0E9F6, 0.1, 500 );
+    blight.position.set(-150,0, -150);
+
+    const clight = new THREE.PointLight( 0xFFC0E9F6, 0.1, 500 );
+    clight.position.set(0,-300,0);
+
+    fetch('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson').then(res => res.json()).then(countries => {
+      world.polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'));
+
+      setTimeout(() => world
+      .polygonsTransitionDuration(1000)
+      .polygonAltitude(0.01),10);
+      //   feat => Math.max(0.01, Math.sqrt(+feat.properties.POP_EST) * 0.00001))
+      // , 10);
+    });
+    // Setup renderer
+    const renderer = new THREE.WebGLRenderer({antialias:true});
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.getElementById('globeViz').appendChild(renderer.domElement);
+
+    console.log(world);
+
+    // Setup scene
+    // scene.background = new THREE.Color('cornflowerblue')
+    scene.add(world);
+    scene.add(new THREE.AmbientLight(0xbbbbbb, 1.4));
+    scene.add(new THREE.DirectionalLight(0xffffff, 0.1));
+
+    const axesHelper = new THREE.AxesHelper( 155 );
+    scene.add( axesHelper );
+
+    scene.add( light );
+    scene.add( blight );
+    scene.add( clight );
+
+
+
+    // Setup camera
+    const camera = new THREE.PerspectiveCamera();
+    camera.aspect = window.innerWidth/window.innerHeight;
+    camera.updateProjectionMatrix();
+    camera.position.z = 500;
+
+    // Add camera controls
+    const tbControls = new THREE.TrackballControls(camera, renderer.domElement);
+    tbControls.minDistance = 101;
+    tbControls.rotateSpeed = 5;
+    tbControls.zoomSpeed = 0.8;
+
+    // Kick-off renderer
+    (function animate() { // IIFE
+
+      world.rotation.x +=0.0005
+      world.rotation.z -=0.0005
+      world.rotation.y +=0.001
+
+      // Frame cycle
+      tbControls.update();
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    })();
+  </script>
+</body>

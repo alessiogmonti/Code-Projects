@@ -47,10 +47,10 @@ let gs = d3.graphScroll()
     .sections(d3.selectAll('.container #sections > div'))
     // .offset(innerWidth < 900 ? innerHeight - 30 : 200)
     .on('active', function(i){
+      document.getElementById("dig2").textContent=i+1;
       data2get[i].then(init);
-      chart.setColors(colors[i])
+      // chart.setColors(colors[i])
     });
-
 
 // const chart2 = new Chart({
 //   element: document.querySelector('.container2 #graph'),

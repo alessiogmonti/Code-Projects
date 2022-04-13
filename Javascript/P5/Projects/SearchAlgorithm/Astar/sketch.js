@@ -11,9 +11,13 @@ function heuristic(a,b){
   return d;
 }
 
-let cols = 90;
-let rows = 35;
-let grid = new Array(cols);
+let width;
+let height;
+
+let cols;
+let rows;
+
+let grid;
 
 let openSet = []
 let closedSet = []
@@ -25,8 +29,14 @@ let path = [];
 
 function setup() {
   pixelDensity(7.0);
-  createCanvas(900, 350);
-  console.log(windowWidth,windowHeight);
+  width = windowWidth-50;
+  height = windowHeight-50;
+  cols = parseInt(width/20);
+  rows = parseInt(height/20);
+
+  grid = new Array(cols);
+  createCanvas(width, height);
+
   w = width/cols
   h = height/rows;
 
@@ -67,8 +77,9 @@ function draw() {
    var current = openSet[winner];
 
     if(current === end){
-      noLoop();
+      // noLoop();
       console.log('done')
+      location.reload()
     }
     removeFromArray(openSet, current);
     closedSet.push(current);
@@ -98,8 +109,10 @@ function draw() {
       }
     }
   } else {
-    return;
-    noLoop();
+    // return;
+    // noLoop();
+    console.log('nosolution')
+    location.reload()
   }
 
   background(255);
@@ -136,4 +149,10 @@ function draw() {
   }
   endShape();
   pop();
+
+  push();
+  fill(15,91,231)
+  rect(grid[cols-1][rows-1].x * w,grid[cols-1][rows-1].y * h, w-1,h-1 );
+  pop();
+  // button.mousePressed(location.reload());
 }

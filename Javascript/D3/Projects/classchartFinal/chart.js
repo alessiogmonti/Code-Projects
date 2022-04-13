@@ -100,7 +100,7 @@ class Chart{
               .attr("x", this.width-103)
               .attr("dy", ".71em")
               .style("text-anchor", "end")
-              .style("fill", "indigo")
+              .style("fill", "#4B5495")
               .style('font-family', 'Helvetica')
               .style('font-size', '11px')
               .style('letter-spacing', '1px')
@@ -127,9 +127,9 @@ class Chart{
              .attr('d', function (d) { return line(d.values) })
              .style('stroke', function(d){
                   if (d.name.match(/([t])/g)) {
-                    return 'indigo'
+                    return '#4B5495'
                   } else {
-                    return 'orange'
+                    return '#E4914E'
                   }})
              .style("stroke-dasharray", function(d){
                if (d.name.match(/[m]/g)){
@@ -161,8 +161,8 @@ class Chart{
 
     mousePerLine.append("circle")
       .attr("r", 7)
-      .style("stroke", "orange")
-      .style("fill", "orange")
+      .style("stroke", "#E4914E")
+      .style("fill", "#E4914E")
       .style("fill-opacity", "0.3")
       .style("stroke-width", "1px")
       .style("opacity", "0");
@@ -252,7 +252,7 @@ class Chart{
                                                       + ")")
                  .attr("x", 7)
                  .attr("dy", ".3em")
-                 .style("fill", "orange")
+                 .style("fill", "#E4914E")
                  .style('font-family', 'Helvetica')
                  .style('font-size', '11px')
                  .style('letter-spacing', '1px')

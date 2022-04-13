@@ -57,6 +57,7 @@ function setup() {
 }
 
 function draw() {
+	translate(windowWidth/2,windowHeight/2);
 	while (c < 100) {
 		background(255);
 

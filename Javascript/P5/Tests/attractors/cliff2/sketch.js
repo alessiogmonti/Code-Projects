@@ -26,7 +26,7 @@ function setup() {
 function draw(){
   background(255);
 
-  let dt = 0.01;
+  let dt = 0.1;
   let dx = nx(x,y,a,b,c,d) * dt;
   let dy = ny(x,y,a,b,c,d) * dt;
 
@@ -47,9 +47,10 @@ function draw(){
 
   scale(50);
 
-  beginShape(LINES);
+  // beginShape(LINES);
   for (var i = 0; i < pointlist.length; i++) {
-    vertex(pointlist[i].x,pointlist[i].y);
+    // vertex(pointlist[i].x,pointlist[i].y);
+    point(pointlist[i].x, pointlist[i].y)
   }
-  endShape(CLOSE);
+  // endShape(CLOSE);
 }

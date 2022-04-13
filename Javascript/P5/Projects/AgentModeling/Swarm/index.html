@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Particle Swarm Visualization</title>
+  </head>
+  <body>
+    <div class="graphText">
+      <div class="title">
+        <h1> Particle Swarm Optimization</h1>
+        <h6> for hyper-parameter tuning</h6>
+      </div>
+      <div class="num"> <span class="dig1" id="dig1">0 </span> <span class="dig2" id="dig2"> 1</span>
+      </div>
+      <div id='container' class="container">
+        <div class='sketch' id='sketch'> </div>
+        <div id = 'container2'>
+          <div id='sections'>
+            <div class="description">
+              <p> This visualization showcases the process by which an <span style = "color:#6496de" > evolutionary algorithm </span>
+                searches for the <span style = "color:#6496de" > global optima </span> of a multi-parameter problem.
+              </p>
+              <p> A common use for this algorithm is the optimization of Machine Learning (ML) model hyper-parameters.
+                These are the settings that the drive the learning rate and accuracy of the model.
+              </p>
+              <p>
+                For example, a Deep Neural network has thousands of possible parameter combinations. The particle swarm is not
+                guaranteed to find the absolute best one, but it will converge to one of the best combinations in a relatively short amount of time.
+                 <b class="bold">  </b>
+              </p>
+            </div>
+
+            <div class="description">
+              <p> <p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://d3js.org/d3.v6.js"></script> -->
+    <!-- <script src='graph-scroll.js'></script> -->
+    <!-- <script >
+    let gs = d3.graphScroll()
+        .container(d3.select('#sketch'))
+        // .graph(d3.selectAll('.container #graph'))
+        .eventId('uniqueId1')  // namespace for scroll and resize events
+        .sections(d3.selectAll('.container #sections > div'))
+        // .offset(innerWidth < 900 ? innerHeight - 30 : 200)
+        .on('active', function(i){
+          document.getElementById("dig2").textContent=i+1;
+          data2get[i].then(init);
+          // chart.setColors(colors[i])
+        });
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
+    <script src = "quicksettings.js"></script>
+    <script src = "p5gui.js"></script>
+    <script src = "sketch.js"></script>
+  </body>
+</html>

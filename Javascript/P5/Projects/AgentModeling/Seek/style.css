@@ -1,0 +1,129 @@
+html{
+  font-size: 3px;
+  font-family: 'Source Sans Pro Extra-light 200', sans-serif;
+  color: black;
+  overflow-x: hidden;
+  cursor: crosshair;
+  margin: 0;
+}
+
+body{
+}
+
+.info{
+  position: relative;
+  display: block;
+  top: 83vh;
+  margin: auto;
+}
+
+.title{
+  display: block;
+  padding: 0rem;
+  position: static;
+  width: 91%;
+  margin: auto;
+  background:rgba(255,255,255,0.5);
+  padding-bottom: 2rem;
+}
+
+.title h1{
+  line-height:30rem;
+  font-size: 30rem;
+  letter-spacing: 0.8rem;
+  font-family: 'Glory';
+  font-weight: 400;
+  user-select: none;
+  font-style: italic;
+  text-transform: lowercase;
+  margin: 0;
+  padding-bottom: 5rem;
+}
+
+.title h6{
+  width: 55%;
+  line-height:12rem;
+  font-size: 12rem;
+  letter-spacing: 0.5rem;
+  font-family: 'Glory';
+  font-weight: 400;
+  user-select: none;
+  font-style: none;
+  text-transform: lowercase;
+  margin: 0;
+  /* margin-top: 2rem; */
+  /* margin-bottom: 9rem; */
+}
+
+.info{
+  display: block;
+  position: relative;
+}
+
+.bold{
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* GRAPH SCROLL START */
+.description{
+  background:rgba(255,255,255,0.9);
+  float: left;
+  display: block;
+  position: static;
+  width: 50%;
+  margin: 0;
+  margin-left: 20rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  margin-bottom: 10rem;
+}
+
+.description p{
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 8rem;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+/* #container2{
+  display: inline-flex;
+} */
+
+#sketch {
+  top:0;
+  width: 99vw;
+  height: 99vh;
+  margin-top: 0rem;
+  display: block;
+  position: fixed;
+}
+
+.descriptionImages{
+  text-align: center;
+  display: block;
+  position: static;
+  padding-top: 10rem;
+}
+
+.descriptionImages img{
+  border: 1px solid black;
+  width: 90%;
+  background: rgba(255,255,255,0.9);
+  margin-bottom: 10rem;
+}
+  /* opacity: .1; */
+  /* margin-bottom: 200px;
+}
+
+/* #sections > div:last-child{
+  margin-bottom: 30px;
+} */
+
+/* #sections > div.graph-scroll-active{
+  opacity: 1;
+} */
+/* GRAPH SCROLL END */
