@@ -1,6 +1,6 @@
 # Medium
 
-The code in this repository supports the blog posts <a href="https://jayzuccarelli.medium.com">I authored on Medium</a>.
+The code in this repository is gathered from the blog posts of Jay Zuccarelli<a href="https://jayzuccarelli.medium.com"></a>.
 
 * <a href="https://blog.usejournal.com/risk-score-estimation-9c99c59364d0">Risk Score Estimation</a>
 * <a href="https://towardsdatascience.com/developing-machine-learning-pipelines-2881e50fc5e4">Developing Machine Learning Pipelines</a>
